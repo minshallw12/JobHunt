@@ -12,14 +12,14 @@ def addEntry(request):
     company = request.data['company']
     role = request.data['role']
     date_applied = request.data['date_applied']
-    followed_up = request.data['followed_up']
-    rejected = request.data['rejected']
+    # followed_up = request.data['followed_up']
+    # rejected = request.data['rejected']
     req_number = request.data['req_number']
     recruiter = request.data['recruiter']
     recruiter_email = request.data['recruiter_email']
     referral = request.data['referral']
     referral_email = request.data['referral_email']
-    user_id = request.data['user_id']
+    # user_id = request.data['user_id']
 
     try:
         # create a new application entry
@@ -27,14 +27,14 @@ def addEntry(request):
             company = company,
             role = role,
             date_applied = date_applied,
-            followed_up = followed_up,
-            rejected = rejected,
+            # followed_up = followed_up,
+            # rejected = rejected,
             req_number = req_number,
             recruiter = recruiter,
             recruiter_email = recruiter_email,
             referral = referral,
             referral_email = referral_email,
-            user_id = user_id
+            # user_id = user_id
             )
         new_application.save()
         return JsonResponse({"success":True})
