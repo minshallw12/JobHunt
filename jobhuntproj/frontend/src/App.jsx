@@ -1,11 +1,12 @@
 import './App.css'
+import { Outlet } from 'react-router-dom'
 
 export default function App() {
 
   return (
     <div className="App">
-      
-      <h1>This is my Job Hunt App</h1>
+    
+      <Outlet/>
 
     </div>
   )
