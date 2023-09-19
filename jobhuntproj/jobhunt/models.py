@@ -16,7 +16,7 @@ class Jobs (models.Model):
     role = models.CharField(blank=False, null=False, max_length=254)
     date_applied = models.DateField(blank=False)
     followed_up = models.BigIntegerField()
-    rejected = models.CharField(max_length=254)
+    rejected = models.BooleanField(default=False)
     req_number = models.CharField(max_length=254)
     recruiter = models.CharField(max_length=254)
     recruiter_email = models.EmailField(max_length=254)
