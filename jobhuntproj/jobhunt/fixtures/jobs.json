@@ -1,0 +1,19 @@
+[
+    {
+        "model": "jobhunt.jobs", 
+        "pk": 101, 
+        "fields": 
+        {
+            "company": "McCall Real Estate Company", 
+            "role": "Software Engineer", 
+            "date_applied": "2023-9-21",
+            "followed_up": "False",
+            "rejected": "False",
+            "req_number": "R017837",
+            "recruiter": "Dave Carter",
+            "recruiter_email": "mccallrealestate@gmail.com",
+            "referral": "Avi Azoulay",
+            "referral_email": "avi.azoulay@mccallrealestate.com"
+        }
+    }
+]
