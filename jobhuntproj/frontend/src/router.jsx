@@ -1,7 +1,8 @@
 import App from "./App";
 import { createHashRouter } from "react-router-dom";
-import HomePage from "./components/Homepage";
+import HomePage from "./pages/Homepage";
 import Error from "./components/Error";
+import { getApplications } from "./utilities";
 
 const router = createHashRouter([{
     path: '/',
@@ -10,8 +11,9 @@ const router = createHashRouter([{
     children: [
         {
             index: true,
-            element: <HomePage/>
-        }
+            element: <HomePage/>,
+            loader: getApplications
+        },
     ]
 }])
 

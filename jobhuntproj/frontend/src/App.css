@@ -1,0 +1,9 @@
+.entryForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input {
+    margin: 8px;
+}
