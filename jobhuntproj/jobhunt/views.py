@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse, HttpResponse
 from rest_framework.decorators import api_view
 from .models import * 
+import json
 
 # Create your views here.
 def index(request):
@@ -51,3 +52,41 @@ def getApplications(request):
     except Exception as e:
         print(e)
         return JsonResponse({'applications':[]})
+    
+@api_view(['GET'])
+def getApplicationDetails(request, id):
+    print(request, 'getApplicationDetails')
+    try:
+        application = Jobs.objects.get(id = id)
+        print(application)
+        json_data = json.dumps(application, cls=CustomEncoder)
+        print(json_data, 'json_data')
+        return JsonResponse({'data': json_data, 'id':id})
+    except Exception as e:
+        print(e)
+        return JsonResponse({'data': None})
+    
+    # This function serializes the data to return an object
+class CustomEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, Jobs):
+            return {
+                "company": obj.company, 
+                "role": obj.role, 
+                "date_applied": obj.date_applied, 
+                "followed_up": obj.followed_up,
+                "rejected": obj.rejected,
+                "req_number": obj.req_number,
+                "recruiter": obj.recruiter,
+                "recruiter_email": obj.recruiter_email,
+                "referral": obj.referral,
+                "referral_email": obj.referral_email,
+                "user": obj.user
+            }
+        elif isinstance(obj,Interviews):
+            return {
+                "job": obj.job,
+                "offer": obj.offer,
+                "notes": obj.notes,
+            }
+        return super().default(obj)

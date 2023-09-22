@@ -19,3 +19,9 @@ export const getApplications = async() => {
     let response = await axios.get("/getapplications/")
     return response.data.applications
 }
+
+export const getApplicationDetails = async(id) => {
+    let response = await axios.get(`/application/${id.params.id}`)
+    console.log(response.data)
+    return response.data.data
+}

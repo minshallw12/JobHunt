@@ -14,7 +14,7 @@ class App_User(AbstractUser):
 class Jobs (models.Model):
     company = models.CharField(blank=False, null=False, max_length=254)
     role = models.CharField(blank=False, null=False, max_length=254)
-    date_applied = models.DateField(blank=False)
+    date_applied = models.CharField(blank=False,max_length=254)
     followed_up = models.BigIntegerField(default=0)
     rejected = models.BooleanField(default=False)
     req_number = models.CharField(max_length=254, blank=True, null=True)

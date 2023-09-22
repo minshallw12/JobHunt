@@ -2,7 +2,8 @@ import App from "./App";
 import { createHashRouter } from "react-router-dom";
 import HomePage from "./pages/Homepage";
 import Error from "./components/Error";
-import { getApplications } from "./utilities";
+import { getApplications, getApplicationDetails } from "./utilities";
+import JobPage from "./pages/JobPage";
 
 const router = createHashRouter([{
     path: '/',
@@ -14,6 +15,15 @@ const router = createHashRouter([{
             element: <HomePage/>,
             loader: getApplications
         },
+        {
+            path: '/application/:id',
+            element: <JobPage/>,
+            loader: getApplicationDetails
+        },
+        {
+            path: '/job/',
+            element: <JobPage/>
+        }
     ]
 }])
 
