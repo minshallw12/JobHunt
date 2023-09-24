@@ -3,6 +3,7 @@ from django.http import JsonResponse, HttpResponse
 from rest_framework.decorators import api_view
 from .models import * 
 import json
+from django.shortcuts import get_object_or_404
 
 # Create your views here.
 def index(request):
@@ -13,8 +14,8 @@ def addEntry(request):
     company = request.data['company']
     role = request.data['role']
     date_applied = request.data['date_applied']
-    # followed_up = request.data['followed_up']
-    # rejected = request.data['rejected']
+    followed_up = 0
+    rejected = False
     req_number = request.data['req_number']
     recruiter = request.data['recruiter']
     recruiter_email = request.data['recruiter_email']
@@ -28,8 +29,8 @@ def addEntry(request):
             company = company,
             role = role,
             date_applied = date_applied,
-            # followed_up = followed_up,
-            # rejected = rejected,
+            followed_up = followed_up,
+            rejected = rejected,
             req_number = req_number,
             recruiter = recruiter,
             recruiter_email = recruiter_email,
@@ -90,3 +91,34 @@ class CustomEncoder(json.JSONEncoder):
                 "notes": obj.notes,
             }
         return super().default(obj)
+
+@api_view(['PUT'])
+def increment(request, id):
+    my_job = get_object_or_404(Jobs, id=id)
+        
+    if request.method == "PUT":
+        my_job.followed_up += 1
+        my_job.save()
+        return JsonResponse({'success': True})
+    
+    return JsonResponse({'success': False})
+
+@api_view(['PUT'])
+def decrement(request, id):
+    my_job = get_object_or_404(Jobs, id=id)
+        
+    if request.method == "PUT":
+        my_job.followed_up -= 1
+        my_job.save()
+        return JsonResponse({'success': True})
+    
+    return JsonResponse({'success': False})
+
+@api_view(['DELETE'])
+def deleteApplication(request, id):
+    try:
+        Jobs.objects.filter(id=id).delete()
+        return JsonResponse({'success':True})
+    except Exception as e:
+        print(e)
+        return JsonResponse({'sucess':False})

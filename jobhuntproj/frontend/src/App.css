@@ -3,7 +3,34 @@
     flex-direction: column;
     width: 300px;
 }
+.jobDetail {
+    display: flex;
+    flex-direction: column;
+}
 
 input {
     margin: 7px;
+}
+
+.entryColumn {
+    display: flex;
+    flex-direction: column;
+}
+.entryContainer {
+    display: flex;
+}
+
+.cell {
+    width: 300px;
+}
+.smallCell {
+    width: 50px;
+}
+.tableRow {
+    display: flex;
+    width: 1000px;
+}
+
+button {
+    margin: 2px;
 }

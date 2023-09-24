@@ -4,6 +4,7 @@ import HomePage from "./pages/Homepage";
 import Error from "./components/Error";
 import { getApplications, getApplicationDetails } from "./utilities";
 import JobPage from "./pages/JobPage";
+import Delete from "./pages/Delete";
 
 const router = createHashRouter([{
     path: '/',
@@ -21,9 +22,10 @@ const router = createHashRouter([{
             loader: getApplicationDetails
         },
         {
-            path: '/job/',
-            element: <JobPage/>
+            path: '/delete',
+            element: <Delete/>
         }
+        
     ]
 }])
 

@@ -36,22 +36,28 @@ export default function EntryForm() {
                 setReferralEmail(""),
             ]}>
                 <div className="entryForm">
-                    <label for="company">Company</label>
-                    <input type="text" id="company" name="company" onChange={(event) => setCompany(event.target.value)}/>
-                    <label for="role">Role</label>
-                    <input type="text" id="role" name="role" onChange={(event) => setRole(event.target.value)}/>
-                    <label for="date_applied">Date applied</label>
-                    <input type="date" id="date_applied" name="date_applied" onChange={(event) => setDateApplied(event.target.value)}/>
-                    <label for="req_number">Req#</label>
-                    <input type="text" id="req_number" name="req_number" onChange={(event) => setReqNumber(event.target.value)}/>
-                    <label for="recruiter">Recruiter</label>
-                    <input type="text" id="recruiter" name="rectuiter" onChange={(event) => setRecruiter(event.target.value)}/>
-                    <label for="recruiter_email">Recruiter Email</label>
-                    <input type="text" id="rectuiter_email" name="rectuiter_email" onChange={(event) => setRecruiterEmail(event.target.value)}/>
-                    <label for="referral">Referral Name</label>
-                    <input type="text" id="referral" name="referral" onChange={(event) => setReferral(event.target.value)}/>
-                    <label for="referral_email">Referral Email</label>
-                    <input type="text" id="referral_email" name="referral_email" onChange={(event) => setReferralEmail(event.target.value)}/>
+                    <div className="entryContainer">
+                        <div className="entryColumn">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" onChange={(event) => setCompany(event.target.value)}/>
+                            <label for="role">Role</label>
+                            <input type="text" id="role" name="role" onChange={(event) => setRole(event.target.value)}/>
+                            <label for="date_applied">Date applied</label>
+                            <input type="date" id="date_applied" name="date_applied" onChange={(event) => setDateApplied(event.target.value)}/>
+                            <label for="req_number">Req#</label>
+                            <input type="text" id="req_number" name="req_number" onChange={(event) => setReqNumber(event.target.value)}/>
+                        </div>
+                        <div className="entryColumn">
+                            <label for="recruiter">Recruiter</label>
+                            <input type="text" id="recruiter" name="rectuiter" onChange={(event) => setRecruiter(event.target.value)}/>
+                            <label for="recruiter_email">Recruiter Email</label>
+                            <input type="text" id="rectuiter_email" name="rectuiter_email" onChange={(event) => setRecruiterEmail(event.target.value)}/>
+                            <label for="referral">Referral Name</label>
+                            <input type="text" id="referral" name="referral" onChange={(event) => setReferral(event.target.value)}/>
+                            <label for="referral_email">Referral Email</label>
+                            <input type="text" id="referral_email" name="referral_email" onChange={(event) => setReferralEmail(event.target.value)}/>
+                        </div>
+                    </div>
                     <button type="submit">Submit entry</button>
                 </div>
             </form>
