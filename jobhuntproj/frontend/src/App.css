@@ -34,3 +34,6 @@ input {
 button {
     margin: 2px;
 }
+.jobPage {
+    display: flex;
+}
