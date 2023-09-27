@@ -6,42 +6,12 @@ import Error from "../components/Error"
 import EditCompany from "../components/editForms/EditCompany";
 import EditRole from "../components/editForms/EditRole";
 import EditDate from "../components/editForms/EditDate";
-
-
-// function editSelector(state) {
-//     return (
-//         <div>
-//             {(() => {
-//         switch(state) {
-//           case 'company':
-//             return <Error/>
-//           case 'role':
-//             return <Error/>
-//           case 'date_applied':
-//             return <Error/>
-//           case 'date_applied':
-//             return <Error/>
-//           case 'req_number':
-//             return <Error/>
-//           case 'followed_up':
-//             return <Error/>
-//           case 'rejected':
-//             return <Error/>
-//           case 'recruiter':
-//             return <Error/>
-//           case 'recruiter_email':
-//             return <Error/>
-//           case 'referral':
-//             return <Error/>
-//           case 'referral_email':
-//             return <Error/>
-//           default:
-//             return null
-//         }
-//       })()}
-//         </div>
-//     )
-// }
+import EditRecruiter from "../components/editForms/EditRecruiter";
+import EditRecruiterEmail from "../components/editForms/EditRecruiterEmail";
+import Editreferral from "../components/editForms/EditReferral";
+import EditReferralEmail from "../components/editForms/EditReferralEmail";
+import EditReq from "../components/editForms/EditReq";
+import EditRejected from "../components/editForms/EditRejected";
 
 export default function JobPage() {
     const [editFlag, setEditFlag] = useState(false)
@@ -150,21 +120,19 @@ export default function JobPage() {
           case 'date_applied':
             return <EditDate/>
           case 'date_applied':
-            return <Error/>
+            return <EditDate/>
           case 'req_number':
-            return <Error/>
-          case 'followed_up':
-            return <Error/>
+            return <EditReq/>
           case 'rejected':
-            return <Error/>
+            return <EditRejected/>
           case 'recruiter':
-            return <Error/>
+            return <EditRecruiter/>
           case 'recruiter_email':
-            return <Error/>
+            return <EditRecruiterEmail/>
           case 'referral':
-            return <Error/>
+            return <Editreferral/>
           case 'referral_email':
-            return <Error/>
+            return <EditReferralEmail/>
           default:
             return null
         }

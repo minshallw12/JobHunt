@@ -88,6 +88,15 @@ export const editDate = async(id, date_applied) => {
     console.log(response.data.success)
     return response.data.success
 }
+export const editReq = async(id, req_number) => {
+    console.log(id)
+    console.log(req_number)
+    let response = await axios.put(`/editreq/${id}`, {
+        'req_number': req_number,
+    })
+    console.log(response.data.success)
+    return response.data.success
+}
 export const editRejected = async(id, rejected) => {
     console.log(id)
     console.log(rejected)
@@ -106,7 +115,7 @@ export const editRecruiter = async(id, recruiter) => {
     console.log(response.data.success)
     return response.data.success
 }
-export const editRecuiterEmail = async(id, recruiter_email) => {
+export const editRecruiterEmail = async(id, recruiter_email) => {
     console.log(id)
     console.log(recruiter_email)
     let response = await axios.put(`/editrecruiteremail/${id}`, {
