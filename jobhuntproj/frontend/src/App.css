@@ -37,3 +37,8 @@ button {
 .jobPage {
     display: flex;
 }
+
+.editForm {
+    display: flex;
+    flex-direction: column;
+}

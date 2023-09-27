@@ -9,6 +9,7 @@ from django.shortcuts import get_object_or_404
 def index(request):
     return HttpResponse(open('static/index.html'))
 
+# Create
 @api_view(['POST'])
 def addEntry(request):
     company = request.data['company']
@@ -44,6 +45,7 @@ def addEntry(request):
         print(e)
         return JsonResponse({"success":False})
 
+# Read
 @api_view(['GET'])
 def getApplications(request):
     print(request, 'getApplications')
@@ -92,6 +94,7 @@ class CustomEncoder(json.JSONEncoder):
             }
         return super().default(obj)
 
+# Update
 @api_view(['PUT'])
 def increment(request, id):
     my_job = get_object_or_404(Jobs, id=id)
@@ -114,25 +117,109 @@ def decrement(request, id):
     
     return JsonResponse({'success': False})
 
+# @api_view(['PUT'])
+# def editEntry(request, id):
+#     my_job = get_object_or_404(Jobs, id=id)
+
+#     if request.method == "PUT":
+#         my_job.company = request.data['company']
+#         my_job.role = request.data['role']
+#         my_job.date_applied = request.data['date_applied']
+#         # my_job.followed_up = 0
+#         # my_job.rejected = False
+#         my_job.req_number = request.data['req_number']
+#         my_job.recruiter = request.data['recruiter']
+#         my_job.recruiter_email = request.data['recruiter_email']
+#         my_job.referral = request.data['referral']
+#         my_job.referral_email = request.data['referral_email']
+#         my_job.save()
+#         return JsonResponse({'success': True})
+#     return JsonResponse({'success': False})
+
 @api_view(['PUT'])
-def editEntry(request, id):
+def editCompany(request, id):
     my_job = get_object_or_404(Jobs, id=id)
 
     if request.method == "PUT":
         my_job.company = request.data['company']
+        my_job.save()
+        return JsonResponse({'success': True})
+    return JsonResponse({'success': False})
+@api_view(['PUT'])
+def editRole(request, id):
+    my_job = get_object_or_404(Jobs, id=id)
+
+    if request.method == "PUT":
         my_job.role = request.data['role']
+        my_job.save()
+        return JsonResponse({'success': True})
+    return JsonResponse({'success': False})
+@api_view(['PUT'])
+def editDate(request, id):
+    my_job = get_object_or_404(Jobs, id=id)
+
+    if request.method == "PUT":
         my_job.date_applied = request.data['date_applied']
-        # my_job.followed_up = 0
-        # my_job.rejected = False
+        my_job.save()
+        return JsonResponse({'success': True})
+    return JsonResponse({'success': False})
+@api_view(['PUT'])
+def editReq(request, id):
+    my_job = get_object_or_404(Jobs, id=id)
+
+    if request.method == "PUT":
         my_job.req_number = request.data['req_number']
+        my_job.save()
+        return JsonResponse({'success': True})
+    return JsonResponse({'success': False})
+
+@api_view(['PUT'])
+def editRejected(request, id):
+    my_job = get_object_or_404(Jobs, id=id)
+
+    if request.method == "PUT":
+        my_job.rejected = request.data['rejected']
+        my_job.save()
+        return JsonResponse({'success': True})
+    return JsonResponse({'success': False})
+@api_view(['PUT'])
+def editRecruiter(request, id):
+    my_job = get_object_or_404(Jobs, id=id)
+
+    if request.method == "PUT":
         my_job.recruiter = request.data['recruiter']
+        my_job.save()
+        return JsonResponse({'success': True})
+    return JsonResponse({'success': False})
+@api_view(['PUT'])
+def editRecruiterEmail(request, id):
+    my_job = get_object_or_404(Jobs, id=id)
+
+    if request.method == "PUT":
         my_job.recruiter_email = request.data['recruiter_email']
+        my_job.save()
+        return JsonResponse({'success': True})
+    return JsonResponse({'success': False})
+@api_view(['PUT'])
+def editReferral(request, id):
+    my_job = get_object_or_404(Jobs, id=id)
+
+    if request.method == "PUT":
         my_job.referral = request.data['referral']
+        my_job.save()
+        return JsonResponse({'success': True})
+    return JsonResponse({'success': False})
+@api_view(['PUT'])
+def editReferralEmail(request, id):
+    my_job = get_object_or_404(Jobs, id=id)
+
+    if request.method == "PUT":
         my_job.referral_email = request.data['referral_email']
         my_job.save()
         return JsonResponse({'success': True})
     return JsonResponse({'success': False})
 
+# Delete
 @api_view(['DELETE'])
 def deleteApplication(request, id):
     try:

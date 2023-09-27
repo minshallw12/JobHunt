@@ -1,9 +1,47 @@
 import { useParams, useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { deleteApplication, increment, decrement } from "../utilities";
+import { deleteApplication, increment, decrement, } from "../utilities";
 import { useState } from "react";
-import EditForm from "../components/EditForm";
+import Error from "../components/Error"
+import EditCompany from "../components/editForms/EditCompany";
+import EditRole from "../components/editForms/EditRole";
+import EditDate from "../components/editForms/EditDate";
 
+
+// function editSelector(state) {
+//     return (
+//         <div>
+//             {(() => {
+//         switch(state) {
+//           case 'company':
+//             return <Error/>
+//           case 'role':
+//             return <Error/>
+//           case 'date_applied':
+//             return <Error/>
+//           case 'date_applied':
+//             return <Error/>
+//           case 'req_number':
+//             return <Error/>
+//           case 'followed_up':
+//             return <Error/>
+//           case 'rejected':
+//             return <Error/>
+//           case 'recruiter':
+//             return <Error/>
+//           case 'recruiter_email':
+//             return <Error/>
+//           case 'referral':
+//             return <Error/>
+//           case 'referral_email':
+//             return <Error/>
+//           default:
+//             return null
+//         }
+//       })()}
+//         </div>
+//     )
+// }
 
 export default function JobPage() {
     const [editFlag, setEditFlag] = useState(false)
@@ -23,12 +61,40 @@ export default function JobPage() {
         await deleteApplication(id);
     }
 
-    const toggleEdit = () =>  {
-        if (editFlag) {
-            setEditFlag(false);
-        } else {
-            setEditFlag(true);
-        }
+    const toggleCompany = () =>  {
+        setEditFlag("company");
+        console.log(`editFlag is ${editFlag}`)
+    }
+    const toggleRole = () =>  {
+        setEditFlag("role");
+        console.log(`editFlag is ${editFlag}`)
+    }
+    const toggleDate = () =>  {
+        setEditFlag("date_applied");
+        console.log(`editFlag is ${editFlag}`)
+    }
+    const toggleReq = () =>  {
+        setEditFlag("req_number");
+        console.log(`editFlag is ${editFlag}`)
+    }
+    const toggleRejected = () =>  {
+        setEditFlag("rejected");
+        console.log(`editFlag is ${editFlag}`)
+    }
+    const toggleRecruiter = () =>  {
+        setEditFlag("recruiter");
+        console.log(`editFlag is ${editFlag}`)
+    }
+    const toggleRecruiterEmail = () =>  {
+        setEditFlag("recruiter_email");
+        console.log(`editFlag is ${editFlag}`)
+    }
+    const toggleReferral = () =>  {
+        setEditFlag("referral");
+        console.log(`editFlag is ${editFlag}`)
+    }
+    const toggleReferralEmail = () =>  {
+        setEditFlag("referral_email");
         console.log(`editFlag is ${editFlag}`)
     }
 
@@ -39,16 +105,16 @@ export default function JobPage() {
             <div className="jobPage">
                 <div className="jobDetail">
                     <div>
-                        <span>Company: </span><span>{data.company}</span>
+                        <span onClick={toggleCompany}>Company: </span><span>{data.company}</span>
                     </div>
                     <div>
-                        <span>Role: </span><span>{data.role} </span>
+                        <span onClick={toggleRole}>Role: </span><span>{data.role} </span>
                     </div>
                     <div>
-                        <span>Date Applied: </span><span>{data.date_applied}</span>
+                        <span onClick={toggleDate}>Date Applied: </span><span>{data.date_applied}</span>
                     </div>
                     <div>
-                        <span>Req#: </span><span>{data.req_number}</span> 
+                        <span onClick={toggleReq}>Req#: </span><span>{data.req_number}</span> 
                     </div>
                     <div>
                         <span>Followed up: </span><span>{data.followed_up}</span>
@@ -56,35 +122,55 @@ export default function JobPage() {
                         <button onClick={decrementFollowUp}> - </button>
                     </div>
                     <div>
-                        <span>Rejected: </span><span>{data.rejected}</span>
+                        <span onClick={toggleRejected}>Rejected: </span><span>{data.rejected}</span>
                     </div>
                     <div>
-                        <span>Recruiter: </span><span>{data.recruiter} </span>
+                        <span onClick={toggleRecruiter}>Recruiter: </span><span>{data.recruiter} </span>
                     </div>
                     <div>
-                        <span>Recruiter Email: </span><span>{data.recruiter_email}</span>
+                        <span onClick={toggleRecruiterEmail}>Recruiter Email: </span><span>{data.recruiter_email}</span>
                     </div>
                     <div>
-                        <span>Referral: </span><span>{data.referral} </span>
+                        <span onClick={toggleReferral}>Referral: </span><span>{data.referral} </span>
                     </div>
                     <div>
-                        <span>Referral Email: </span><span>{data.referral_email}</span>
+                        <span onClick={toggleReferralEmail}>Referral Email: </span><span>{data.referral_email}</span>
                     </div>
                     <div>
-                        <button onClick={toggleEdit}>Edit</button>
                         <Link to={'/delete'}><button onClick={handleDelete}>Delete</button></Link>
                     </div>
                 </div>    
-                {
-                    editFlag ?
-                    <EditForm/>:
-                    <h3>False</h3>
-
-                }
-                    
-                
+        <div>
+             {(() => {
+        switch(editFlag) {
+          case 'company':
+            return <EditCompany/>
+          case 'role':
+            return <EditRole/>
+          case 'date_applied':
+            return <EditDate/>
+          case 'date_applied':
+            return <Error/>
+          case 'req_number':
+            return <Error/>
+          case 'followed_up':
+            return <Error/>
+          case 'rejected':
+            return <Error/>
+          case 'recruiter':
+            return <Error/>
+          case 'recruiter_email':
+            return <Error/>
+          case 'referral':
+            return <Error/>
+          case 'referral_email':
+            return <Error/>
+          default:
+            return null
+        }
+      })()}
+        </div>
             </div>
-            
             
         </div>
     )
