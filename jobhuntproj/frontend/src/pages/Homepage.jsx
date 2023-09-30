@@ -6,8 +6,8 @@ import { getApplications } from "../utilities";
 export default function HomePage() {
     const [entries, setEntries] = useState([]);
 
+    // The useEffect clause rerenders the page when a new entry is added.
     useEffect(() => {
-        // Fetch entries from the database when the component mounts
         getApplications().then((data) => {
             setEntries(data);
         });
@@ -17,6 +17,8 @@ export default function HomePage() {
         setEntries(newEntries);
     };
 
+    // The updated entries must be passed as a prop to the EntryForm.
+    // The current entries are stored in the useState and passed to the ApplicationsList component.
     return (
         <div>
             <h1>This is my Jobhunt App</h1>

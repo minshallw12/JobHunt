@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { addEntry, getApplications } from "../utilities";
 
 export default function EntryForm({onEntryAdded}) {
@@ -11,6 +11,7 @@ export default function EntryForm({onEntryAdded}) {
     const [referral, setReferral] = useState(null)
     const [referral_email, setReferralEmail] = useState(null)
 
+    // When we add a new entry we fetch the entire list of entries and update our current list.
     const handleAddEntry = async () => {
         await addEntry(
             company,
@@ -22,10 +23,13 @@ export default function EntryForm({onEntryAdded}) {
             referral,
             referral_email
         );
+        // Fetching entries
         const updatedEntries = await getApplications();
 
+        // Updating the current list after the fetch
         onEntryAdded(updatedEntries);
 
+        // Clearing the form to blanks
         setCompany(""),
         setRole(""),
         setDateApplied(""),

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// We are passing the current list of entries as a prop from the HomePage page.
 export default function ApplicationsList({ entries }) {
     return (
         <div>
@@ -11,6 +12,7 @@ export default function ApplicationsList({ entries }) {
                 <h4 className="cell">Date Applied</h4>
             </div>
             <ol>
+                {/* Mapping the data fields to the respective spaces on frontend in list format */}
                 {entries.map(({ id, company, role, date_applied }) => (
                     <li className="tableRow" key={id}>
                         <span className="smallCell">{id}</span>
