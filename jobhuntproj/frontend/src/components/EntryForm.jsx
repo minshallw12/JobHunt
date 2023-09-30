@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { addEntry } from "../utilities";
+import { useEffect, useState } from "react";
+import { addEntry, getApplications } from "../utilities";
 
-export default function EntryForm() {
+export default function EntryForm({onEntryAdded}) {
     const [company, setCompany] = useState(null);
     const [role, setRole] = useState(null)
     const [date_applied, setDateApplied] = useState(null)
@@ -11,30 +11,35 @@ export default function EntryForm() {
     const [referral, setReferral] = useState(null)
     const [referral_email, setReferralEmail] = useState(null)
 
+    const handleAddEntry = async () => {
+        await addEntry(
+            company,
+            role,
+            date_applied,
+            req_number,
+            recruiter,
+            recruiter_email,
+            referral,
+            referral_email
+        );
+        const updatedEntries = await getApplications();
+
+        onEntryAdded(updatedEntries);
+
+        setCompany(""),
+        setRole(""),
+        setDateApplied(""),
+        setReqNumber(""),
+        setRecruiter(""),
+        setRecruiterEmail(""),
+        setReferral(""),
+        setReferralEmail("")
+        };
+
     return (
         <div>
         <h3>Add an entry here:</h3>
-            <form onSubmit={(event) => [
-                event.preventDefault(),
-                addEntry(
-                    company,
-                    role,
-                    date_applied,
-                    req_number,
-                    recruiter,
-                    recruiter_email,
-                    referral,
-                    referral_email
-                ),
-                setCompany(""),
-                setRole(""),
-                setDateApplied(""),
-                setReqNumber(""),
-                setRecruiter(""),
-                setRecruiterEmail(""),
-                setReferral(""),
-                setReferralEmail(""),
-            ]}>
+            <form onSubmit={handleAddEntry}>
                 <div className="entryForm">
                     <div className="entryContainer">
                         <div className="entryColumn">
