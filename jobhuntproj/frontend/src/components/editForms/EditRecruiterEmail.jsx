@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { editRecruiterEmail } from "../../utilities";
 
-export default function EditRecruiterEmail() {
+export default function EditRecruiterEmail({onRecEmailUpdated}) {
     const { id } = useParams()
     const [recruiterEmail, setRecruiterEmail] = useState(null);
 
@@ -15,6 +15,7 @@ export default function EditRecruiterEmail() {
         );
     
         if (success) {
+          onRecEmailUpdated(recruiterEmail)
           setRecruiterEmail("");
         } else {
           console.error("Edit request failed");

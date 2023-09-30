@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { editRecruiter } from "../../utilities";
 
-export default function EditRecruiter() {
+export default function EditRecruiter({onRecruiterUpdated}) {
     const { id } = useParams()
     const [recruiter, setRecruiter] = useState(null);
 
@@ -15,7 +15,8 @@ export default function EditRecruiter() {
         );
     
         if (success) {
-          setrecruiter("");
+          onRecruiterUpdated(recruiter)
+          setRecruiter("");
         } else {
           console.error("Edit request failed");
         }

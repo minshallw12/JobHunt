@@ -124,11 +124,11 @@ export const editRecruiterEmail = async(id, recruiter_email) => {
     console.log(response.data.success)
     return response.data.success
 }
-export const editReferral = async(id, referral_email) => {
+export const editReferral = async(id, referral) => {
     console.log(id)
-    console.log(referral_email)
+    console.log(referral)
     let response = await axios.put(`/editreferral/${id}`, {
-        'referral_email': referral_email,
+        'referral': referral,
     })
     console.log(response.data.success)
     return response.data.success

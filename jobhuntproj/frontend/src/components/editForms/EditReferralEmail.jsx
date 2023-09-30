@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { editReferralEmail } from "../../utilities";
 
-export default function EditReferralEmail() {
+export default function EditReferralEmail({onRefEmailUpdated}) {
     const { id } = useParams()
     const [referralEmail, setReferralEmail] = useState(null);
 
@@ -15,6 +15,7 @@ export default function EditReferralEmail() {
         );
     
         if (success) {
+          onRefEmailUpdated(referralEmail)
           setReferralEmail("");
         } else {
           console.error("Edit request failed");

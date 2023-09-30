@@ -7,7 +7,7 @@ import EditRole from "../components/editForms/EditRole";
 import EditDate from "../components/editForms/EditDate";
 import EditRecruiter from "../components/editForms/EditRecruiter";
 import EditRecruiterEmail from "../components/editForms/EditRecruiterEmail";
-import Editreferral from "../components/editForms/EditReferral";
+import EditReferral from "../components/editForms/EditReferral";
 import EditReferralEmail from "../components/editForms/EditReferralEmail";
 import EditReq from "../components/editForms/EditReq";
 import EditRejected from "../components/editForms/EditRejected";
@@ -93,6 +93,30 @@ export default function JobPage() {
             req_number: newReq,
         }));
     };
+    const updateRecruiter = (newRecruiter) => {
+        setData((prevData) => ({
+            ...prevData,
+            recruiter: newRecruiter,
+        }));
+    };
+    const updateRecruiterEmail = (newRecruiterEmail) => {
+        setData((prevData) => ({
+            ...prevData,
+            recruiter_email: newRecruiterEmail,
+        }));
+    };
+    const updateReferral = (newReferral) => {
+        setData((prevData) => ({
+            ...prevData,
+            referral: newReferral,
+        }));
+    };
+    const updateReferralEmail = (newReferralEmail) => {
+        setData((prevData) => ({
+            ...prevData,
+            referral_email: newReferralEmail,
+        }));
+    };
 
     return (
         <div>
@@ -150,13 +174,13 @@ export default function JobPage() {
           case 'rejected':
             return <EditRejected/>
           case 'recruiter':
-            return <EditRecruiter/>
+            return <EditRecruiter onRecruiterUpdated={updateRecruiter}/>
           case 'recruiter_email':
-            return <EditRecruiterEmail/>
+            return <EditRecruiterEmail onRecEmailUpdated={updateRecruiterEmail}/>
           case 'referral':
-            return <Editreferral/>
+            return <EditReferral onReferralUpdated={updateReferral}/>
           case 'referral_email':
-            return <EditReferralEmail/>
+            return <EditReferralEmail onRefEmailUpdated={updateReferralEmail}/>
           default:
             return null
         }
