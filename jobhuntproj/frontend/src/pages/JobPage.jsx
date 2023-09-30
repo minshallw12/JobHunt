@@ -2,7 +2,6 @@ import { useParams, useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { deleteApplication, increment, decrement, } from "../utilities";
 import { useState } from "react";
-import Error from "../components/Error"
 import EditCompany from "../components/editForms/EditCompany";
 import EditRole from "../components/editForms/EditRole";
 import EditDate from "../components/editForms/EditDate";
@@ -14,9 +13,10 @@ import EditReq from "../components/editForms/EditReq";
 import EditRejected from "../components/editForms/EditRejected";
 
 export default function JobPage() {
-    const [editFlag, setEditFlag] = useState(false)
+    const [editFlag, setEditFlag] = useState(null)
     const id = useParams()
-    const data = JSON.parse(useLoaderData())
+    const [data, setData] = useState(JSON.parse(useLoaderData())); // Initialize data state with loader data
+    
     console.log(data)
 
     const incrementFollowUp = async() => {
@@ -68,6 +68,32 @@ export default function JobPage() {
         console.log(`editFlag is ${editFlag}`)
     }
 
+    const updateCompany = (newCompany) => {
+        // Update the 'data' object with the new company name
+        setData((prevData) => ({
+            ...prevData,
+            company: newCompany,
+        }));
+    };
+    const updateRole = (newRole) => {
+        setData((prevData) => ({
+            ...prevData,
+            role: newRole,
+        }));
+    };
+    const updateDate = (newDate) => {
+        setData((prevData) => ({
+            ...prevData,
+            date_applied: newDate,
+        }));
+    };
+    const updateReq = (newReq) => {
+        setData((prevData) => ({
+            ...prevData,
+            req_number: newReq,
+        }));
+    };
+
     return (
         <div>
             <Link to={"/"}><button>Back</button></Link>
@@ -114,15 +140,13 @@ export default function JobPage() {
              {(() => {
         switch(editFlag) {
           case 'company':
-            return <EditCompany/>
+            return <EditCompany onCompanyUpdated={updateCompany}/>
           case 'role':
-            return <EditRole/>
+            return <EditRole onRoleUpdated={updateRole}/>
           case 'date_applied':
-            return <EditDate/>
-          case 'date_applied':
-            return <EditDate/>
+            return <EditDate onDateUpdated={updateDate}/>
           case 'req_number':
-            return <EditReq/>
+            return <EditReq onReqUpdated={updateReq}/>
           case 'rejected':
             return <EditRejected/>
           case 'recruiter':

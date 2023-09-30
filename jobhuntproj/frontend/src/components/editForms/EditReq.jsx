@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { editReq } from "../../utilities";
 
-export default function EditReq() {
+export default function EditReq({onReqUpdated}) {
     const { id } = useParams()
     const [req_number, setReq] = useState(null);
 
@@ -15,6 +15,7 @@ export default function EditReq() {
         );
     
         if (success) {
+          onReqUpdated(req_number)
           setReq("");
         } else {
           console.error("Edit request failed");
