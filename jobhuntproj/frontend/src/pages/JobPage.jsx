@@ -15,8 +15,9 @@ import EditRejected from "../components/editForms/EditRejected";
 export default function JobPage() {
     const [editFlag, setEditFlag] = useState(null)
     const id = useParams()
-    const [data, setData] = useState(JSON.parse(useLoaderData())); // Initialize data state with loader data
     
+    // Initialize data state with loader data
+    const [data, setData] = useState(JSON.parse(useLoaderData())); 
     console.log(data)
 
     const incrementFollowUp = async() => {
