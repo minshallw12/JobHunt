@@ -117,25 +117,6 @@ def decrement(request, id):
     
     return JsonResponse({'success': False})
 
-# @api_view(['PUT'])
-# def editEntry(request, id):
-#     my_job = get_object_or_404(Jobs, id=id)
-
-#     if request.method == "PUT":
-#         my_job.company = request.data['company']
-#         my_job.role = request.data['role']
-#         my_job.date_applied = request.data['date_applied']
-#         # my_job.followed_up = 0
-#         # my_job.rejected = False
-#         my_job.req_number = request.data['req_number']
-#         my_job.recruiter = request.data['recruiter']
-#         my_job.recruiter_email = request.data['recruiter_email']
-#         my_job.referral = request.data['referral']
-#         my_job.referral_email = request.data['referral_email']
-#         my_job.save()
-#         return JsonResponse({'success': True})
-#     return JsonResponse({'success': False})
-
 @api_view(['PUT'])
 def editCompany(request, id):
     my_job = get_object_or_404(Jobs, id=id)

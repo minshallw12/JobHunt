@@ -49,7 +49,7 @@ export default function JobPage() {
         console.log(`editFlag is ${editFlag}`)
     }
     const toggleRejected = () =>  {
-        setEditFlag("rejected");
+        setEditFlag("rejected")
         console.log(`editFlag is ${editFlag}`)
     }
     const toggleRecruiter = () =>  {
@@ -119,6 +119,14 @@ export default function JobPage() {
         }));
     };
 
+    const showRejected = (data) => {
+        if (data.req_number){
+            return "True"
+        } else {
+            return "False"
+        };
+    };
+
     return (
         <div>
             <Link to={"/"}><button>Back</button></Link>
@@ -143,7 +151,7 @@ export default function JobPage() {
                         <button onClick={decrementFollowUp}> - </button>
                     </div>
                     <div>
-                        <span onClick={toggleRejected}>Rejected: </span><span>{data.rejected}</span>
+                        <span onClick={toggleRejected}>Rejected: </span><span>{showRejected(data.rejected)}</span>
                     </div>
                     <div>
                         <span onClick={toggleRecruiter}>Recruiter: </span><span>{data.recruiter} </span>
