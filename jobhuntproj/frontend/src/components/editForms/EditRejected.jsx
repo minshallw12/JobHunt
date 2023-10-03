@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { editRejected } from "../../utilities";
+import { updateField } from "../../utilities";
 
 export default function EditRejected({onRejectedUpdated}) {
     const { id } = useParams()
@@ -9,10 +9,7 @@ export default function EditRejected({onRejectedUpdated}) {
     const handleSubmit = async (event) => {
         event.preventDefault();
     
-        const success = await editRejected(
-          id,
-          rejected
-        );
+        const success = await updateField(id, "rejected", rejected);
     
         if (success) {
           onRejectedUpdated(rejected);

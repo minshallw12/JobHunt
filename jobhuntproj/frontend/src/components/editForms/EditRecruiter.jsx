@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { editRecruiter } from "../../utilities";
+import { updateField } from "../../utilities";
 
 export default function EditRecruiter({onRecruiterUpdated}) {
     const { id } = useParams()
@@ -9,10 +9,7 @@ export default function EditRecruiter({onRecruiterUpdated}) {
     const handleSubmit = async (event) => {
         event.preventDefault();
     
-        const success = await editRecruiter(
-          id,
-          recruiter
-        );
+        const success = await updateField(id, "recruiter", recruiter);
     
         if (success) {
           onRecruiterUpdated(recruiter)

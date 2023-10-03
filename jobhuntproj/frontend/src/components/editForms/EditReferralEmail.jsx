@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { editReferralEmail } from "../../utilities";
+import { updateField } from "../../utilities";
 
 export default function EditReferralEmail({onRefEmailUpdated}) {
     const { id } = useParams()
@@ -9,10 +9,7 @@ export default function EditReferralEmail({onRefEmailUpdated}) {
     const handleSubmit = async (event) => {
         event.preventDefault();
     
-        const success = await editReferralEmail(
-          id,
-          referralEmail
-        );
+        const success = await updateField(id,"referral_email", referralEmail);
     
         if (success) {
           onRefEmailUpdated(referralEmail)

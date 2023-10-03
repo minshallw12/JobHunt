@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { editCompany } from "../../utilities";
+import { updateField } from "../../utilities";
 
 export default function EditCompany({ onCompanyUpdated }) {
     const { id } = useParams();
@@ -9,7 +9,7 @@ export default function EditCompany({ onCompanyUpdated }) {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        const success = await editCompany(id, company);
+        const success = await updateField(id, "company", company);
 
         if (success) {
             // Call the callback function to update the company name in the JobPage component

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { editDate } from "../../utilities";
+import { updateField } from "../../utilities";
 
 export default function EditDate({onDateUpdated}) {
     const { id } = useParams()
@@ -9,7 +9,7 @@ export default function EditDate({onDateUpdated}) {
     const handleSubmit = async (event) => {
         event.preventDefault();
     
-        const success = await editDate(id, date);
+        const success = await updateField(id, "date_applied", date);
     
         if (success) {
           onDateUpdated(date);

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { editRole } from "../../utilities";
+import { updateField } from "../../utilities";
 
 export default function EditRole({onRoleUpdated}) {
     const { id } = useParams()
@@ -9,10 +9,7 @@ export default function EditRole({onRoleUpdated}) {
     const handleSubmit = async (event) => {
         event.preventDefault();
     
-        const success = await editRole(
-          id,
-          role
-        );
+        const success = await updateField(id, "role", role);
     
         if (success) {
           onRoleUpdated(role);

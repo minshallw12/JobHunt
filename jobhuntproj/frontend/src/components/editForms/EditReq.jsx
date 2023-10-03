@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { editReq } from "../../utilities";
+import { updateField } from "../../utilities";
 
 export default function EditReq({onReqUpdated}) {
     const { id } = useParams()
@@ -9,10 +9,7 @@ export default function EditReq({onReqUpdated}) {
     const handleSubmit = async (event) => {
         event.preventDefault();
     
-        const success = await editReq(
-          id,
-          req_number
-        );
+        const success = await updateField(id, "req_number" , req_number);
     
         if (success) {
           onReqUpdated(req_number)

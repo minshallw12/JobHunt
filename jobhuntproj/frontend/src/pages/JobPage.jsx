@@ -20,8 +20,7 @@ export default function JobPage() {
     const [data, setData] = useState(JSON.parse(useLoaderData())); 
     console.log(data)
 
-
-
+    // Helper functions
     const incrementFollowUp = async() => {
         await increment(id);
     };
@@ -41,6 +40,7 @@ export default function JobPage() {
         }))
     }
 
+    // These functions will update data
     const updateCompany = (newCompany) => updateData("company", newCompany);
     const updateRole = (newRole) => updateData("role", newRole);
     const updateDate = (newDate) => updateData("date_applied", newDate);
