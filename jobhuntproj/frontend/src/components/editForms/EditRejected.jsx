@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { editRejected } from "../../utilities";
 
-export default function EditRejected() {
+export default function EditRejected({onRejectedUpdated}) {
     const { id } = useParams()
     const [rejected, setRejected] = useState(null);
 
@@ -15,11 +15,11 @@ export default function EditRejected() {
         );
     
         if (success) {
-          setRejected("");
-        } else {
+          onRejectedUpdated(rejected);
+          } else {
           console.error("Edit request failed");
-        }
-      };
+          };
+        };
 
     return (
         <div className="editForm">
@@ -27,11 +27,11 @@ export default function EditRejected() {
                 <fieldset>
                     <legend>Rejected?</legend>
                     <div>
-                        <input type="radio" id="yes" name="yes" value="true"/>
+                        <input type="radio" id="yes" name="rejected" onChange={()=>setRejected(true)}/>
                         <label for="rejected">Yes</label>
                     </div>
                     <div>
-                        <input type="radio" id="no" name="no" value="false" />
+                        <input type="radio" id="no" name="rejected" onChange={()=>setRejected(false)}/>
                         <label for="rejected">No</label>
                     </div>
                 </fieldset>
@@ -39,4 +39,4 @@ export default function EditRejected() {
             </form>
         </div>
     )
-}
+};

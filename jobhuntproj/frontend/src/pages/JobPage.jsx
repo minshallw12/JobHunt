@@ -88,6 +88,12 @@ export default function JobPage() {
             date_applied: newDate,
         }));
     };
+    const updateRejected = (newRejected) => {
+        setData((prevData) => ({
+            ...prevData,
+            rejected: newRejected
+        }))
+    }
     const updateReq = (newReq) => {
         setData((prevData) => ({
             ...prevData,
@@ -120,11 +126,8 @@ export default function JobPage() {
     };
 
     const showRejected = (data) => {
-        if (data.req_number){
-            return "True"
-        } else {
-            return "False"
-        };
+        console.log(data.rejected, "data.rejected")
+        return data.rejected ? "Yes" : "No"
     };
 
     return (
@@ -151,7 +154,7 @@ export default function JobPage() {
                         <button onClick={decrementFollowUp}> - </button>
                     </div>
                     <div>
-                        <span onClick={toggleRejected}>Rejected: </span><span>{showRejected(data.rejected)}</span>
+                        <span onClick={toggleRejected}>Rejected: </span><span>{showRejected(data)}</span>
                     </div>
                     <div>
                         <span onClick={toggleRecruiter}>Recruiter: </span><span>{data.recruiter} </span>
@@ -181,7 +184,7 @@ export default function JobPage() {
           case 'req_number':
             return <EditReq onReqUpdated={updateReq}/>
           case 'rejected':
-            return <EditRejected/>
+            return <EditRejected onRejectedUpdated={updateRejected}/>
           case 'recruiter':
             return <EditRecruiter onRecruiterUpdated={updateRecruiter}/>
           case 'recruiter_email':
