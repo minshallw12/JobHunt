@@ -20,110 +20,35 @@ export default function JobPage() {
     const [data, setData] = useState(JSON.parse(useLoaderData())); 
     console.log(data)
 
+
+
     const incrementFollowUp = async() => {
         await increment(id);
-    }
-
+    };
     const decrementFollowUp = async() => {
         await decrement(id);
-    }
-
+    };
     const handleDelete = async() => {
         await deleteApplication(id);
-    }
+    };
 
-    const toggleCompany = () =>  {
-        setEditFlag("company");
-        console.log(`editFlag is ${editFlag}`)
-    }
-    const toggleRole = () =>  {
-        setEditFlag("role");
-        console.log(`editFlag is ${editFlag}`)
-    }
-    const toggleDate = () =>  {
-        setEditFlag("date_applied");
-        console.log(`editFlag is ${editFlag}`)
-    }
-    const toggleReq = () =>  {
-        setEditFlag("req_number");
-        console.log(`editFlag is ${editFlag}`)
-    }
-    const toggleRejected = () =>  {
-        setEditFlag("rejected")
-        console.log(`editFlag is ${editFlag}`)
-    }
-    const toggleRecruiter = () =>  {
-        setEditFlag("recruiter");
-        console.log(`editFlag is ${editFlag}`)
-    }
-    const toggleRecruiterEmail = () =>  {
-        setEditFlag("recruiter_email");
-        console.log(`editFlag is ${editFlag}`)
-    }
-    const toggleReferral = () =>  {
-        setEditFlag("referral");
-        console.log(`editFlag is ${editFlag}`)
-    }
-    const toggleReferralEmail = () =>  {
-        setEditFlag("referral_email");
-        console.log(`editFlag is ${editFlag}`)
-    }
-
-    const updateCompany = (newCompany) => {
-        // Update the 'data' object with the new company name
+    //consolidate update functions
+    const updateData = (property, newValue) => {
         setData((prevData) => ({
             ...prevData,
-            company: newCompany,
-        }));
-    };
-    const updateRole = (newRole) => {
-        setData((prevData) => ({
-            ...prevData,
-            role: newRole,
-        }));
-    };
-    const updateDate = (newDate) => {
-        setData((prevData) => ({
-            ...prevData,
-            date_applied: newDate,
-        }));
-    };
-    const updateRejected = (newRejected) => {
-        setData((prevData) => ({
-            ...prevData,
-            rejected: newRejected
+            [property]:newValue
         }))
     }
-    const updateReq = (newReq) => {
-        setData((prevData) => ({
-            ...prevData,
-            req_number: newReq,
-        }));
-    };
-    const updateRecruiter = (newRecruiter) => {
-        setData((prevData) => ({
-            ...prevData,
-            recruiter: newRecruiter,
-        }));
-    };
-    const updateRecruiterEmail = (newRecruiterEmail) => {
-        setData((prevData) => ({
-            ...prevData,
-            recruiter_email: newRecruiterEmail,
-        }));
-    };
-    const updateReferral = (newReferral) => {
-        setData((prevData) => ({
-            ...prevData,
-            referral: newReferral,
-        }));
-    };
-    const updateReferralEmail = (newReferralEmail) => {
-        setData((prevData) => ({
-            ...prevData,
-            referral_email: newReferralEmail,
-        }));
-    };
+
+    const updateCompany = (newCompany) => updateData("company", newCompany);
+    const updateRole = (newRole) => updateData("role", newRole);
+    const updateDate = (newDate) => updateData("date_applied", newDate);
+    const updateRejected = (newRej) => updateData("rejected", newRej);  
+    const updateReq = (newReq) => updateData("req_number", newReq);
+    const updateRecruiter = (newRecruiter) => updateData("recruiter", newRecruiter);
+    const updateRecruiterEmail = (newRecruiterEmail) => updateData("recruiter_email", newRecruiterEmail);
+    const updateReferral = (newRef) => updateData("referral", newRef);
+    const updateReferralEmail = (newRefEmail) => updateData("referral_email", newRefEmail);
 
     const showRejected = (data) => {
         console.log(data.rejected, "data.rejected")
@@ -137,16 +62,16 @@ export default function JobPage() {
             <div className="jobPage">
                 <div className="jobDetail">
                     <div>
-                        <span onClick={toggleCompany}>Company: </span><span>{data.company}</span>
+                        <span onClick={()=>setEditFlag("company")}>Company: </span><span>{data.company}</span>
                     </div>
                     <div>
-                        <span onClick={toggleRole}>Role: </span><span>{data.role} </span>
+                        <span onClick={()=>setEditFlag("role")}>Role: </span><span>{data.role} </span>
                     </div>
                     <div>
-                        <span onClick={toggleDate}>Date Applied: </span><span>{data.date_applied}</span>
+                        <span onClick={()=>setEditFlag("date_applied")}>Date Applied: </span><span>{data.date_applied}</span>
                     </div>
                     <div>
-                        <span onClick={toggleReq}>Req#: </span><span>{data.req_number}</span> 
+                        <span onClick={()=>setEditFlag("req_number")}>Req#: </span><span>{data.req_number}</span> 
                     </div>
                     <div>
                         <span>Followed up: </span><span>{data.followed_up}</span>
@@ -154,19 +79,19 @@ export default function JobPage() {
                         <button onClick={decrementFollowUp}> - </button>
                     </div>
                     <div>
-                        <span onClick={toggleRejected}>Rejected: </span><span>{showRejected(data)}</span>
+                        <span onClick={()=>setEditFlag("rejected")}>Rejected: </span><span>{showRejected(data)}</span>
                     </div>
                     <div>
-                        <span onClick={toggleRecruiter}>Recruiter: </span><span>{data.recruiter} </span>
+                        <span onClick={()=>setEditFlag("recruiter")}>Recruiter: </span><span>{data.recruiter} </span>
                     </div>
                     <div>
-                        <span onClick={toggleRecruiterEmail}>Recruiter Email: </span><span>{data.recruiter_email}</span>
+                        <span onClick={()=>setEditFlag("recruiter_email")}>Recruiter Email: </span><span>{data.recruiter_email}</span>
                     </div>
                     <div>
-                        <span onClick={toggleReferral}>Referral: </span><span>{data.referral} </span>
+                        <span onClick={()=>setEditFlag("referral")}>Referral: </span><span>{data.referral} </span>
                     </div>
                     <div>
-                        <span onClick={toggleReferralEmail}>Referral Email: </span><span>{data.referral_email}</span>
+                        <span onClick={()=>setEditFlag("referral_email")}>Referral Email: </span><span>{data.referral_email}</span>
                     </div>
                     <div>
                         <Link to={'/delete'}><button onClick={handleDelete}>Delete</button></Link>
