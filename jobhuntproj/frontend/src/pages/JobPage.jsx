@@ -31,8 +31,9 @@ export default function JobPage() {
     const handleDelete = async() => {
         await deleteApplication(id);
     };
-
-    //consolidate update functions
+    const showRejected = (data) => {
+        return data ? "Yes" : "No"
+    };
     const updateData = (property, newValue) => {
         setData((prevData) => ({
             ...prevData,
@@ -50,10 +51,20 @@ export default function JobPage() {
     const updateReferral = (newRef) => updateData("referral", newRef);
     const updateReferralEmail = (newRefEmail) => updateData("referral_email", newRefEmail);
 
-    const showRejected = (data) => {
-        console.log(data.rejected, "data.rejected")
-        return data.rejected ? "Yes" : "No"
-    };
+    // this maps the proper edit form when the user selects a field to edit
+    const editComponents = {
+        company: <EditCompany onCompanyUpdated={updateCompany} />,
+        role: <EditRole onRoleUpdated={updateRole} />,
+        date_applied: <EditDate onDateUpdated={updateDate} />,
+        req_number: <EditReq onReqUpdated={updateReq} />,
+        rejected: <EditRejected onRejectedUpdated={updateRejected} />,
+        recruiter: <EditRecruiter onRecruiterUpdated={updateRecruiter} />,
+        recruiter_email: <EditRecruiterEmail onRecEmailUpdated={updateRecruiterEmail} />,
+        referral: <EditReferral onReferralUpdated={updateReferral} />,
+        referral_email: <EditReferralEmail onRefEmailUpdated={updateReferralEmail} />,
+      };
+      
+
 
     return (
         <div>
@@ -79,7 +90,7 @@ export default function JobPage() {
                         <button onClick={decrementFollowUp}> - </button>
                     </div>
                     <div>
-                        <span onClick={()=>setEditFlag("rejected")}>Rejected: </span><span>{showRejected(data)}</span>
+                        <span onClick={()=>setEditFlag("rejected")}>Rejected: </span><span>{showRejected(data.rejected)}</span>
                     </div>
                     <div>
                         <span onClick={()=>setEditFlag("recruiter")}>Recruiter: </span><span>{data.recruiter} </span>
@@ -96,35 +107,11 @@ export default function JobPage() {
                     <div>
                         <Link to={'/delete'}><button onClick={handleDelete}>Delete</button></Link>
                     </div>
-                </div>    
-        <div>
-             {(() => {
-        switch(editFlag) {
-          case 'company':
-            return <EditCompany onCompanyUpdated={updateCompany}/>
-          case 'role':
-            return <EditRole onRoleUpdated={updateRole}/>
-          case 'date_applied':
-            return <EditDate onDateUpdated={updateDate}/>
-          case 'req_number':
-            return <EditReq onReqUpdated={updateReq}/>
-          case 'rejected':
-            return <EditRejected onRejectedUpdated={updateRejected}/>
-          case 'recruiter':
-            return <EditRecruiter onRecruiterUpdated={updateRecruiter}/>
-          case 'recruiter_email':
-            return <EditRecruiterEmail onRecEmailUpdated={updateRecruiterEmail}/>
-          case 'referral':
-            return <EditReferral onReferralUpdated={updateReferral}/>
-          case 'referral_email':
-            return <EditReferralEmail onRefEmailUpdated={updateReferralEmail}/>
-          default:
-            return null
-        }
-      })()}
-        </div>
+                </div>
+
+        <div>{editComponents[editFlag]}</div>
+        
             </div>
-            
         </div>
     )
 }
