@@ -29,6 +29,16 @@ export const getApplicationDetails = async(id) => {
 };
 
 // Update
+export const followUp = async(id, direction, followed_up) => {
+    try {
+        const response = await axios.put(`/${direction}/${id.id}`, {'followed_up':followed_up})
+        return response.data.success;
+    } catch (error) {
+        console.error(`Error updating ${direction}`, error);
+        throw error;
+    }
+};
+
 export const increment = async(id, followed_up) => {
     console.log(id)
     let response = await axios.put(`/increment/${id.id}`, {'followed_up':followed_up})

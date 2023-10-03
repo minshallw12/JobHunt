@@ -1,6 +1,6 @@
 import { useParams, useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { deleteApplication, increment, decrement, } from "../utilities";
+import { deleteApplication, increment, decrement, followUp, } from "../utilities";
 import { useState } from "react";
 import EditCompany from "../components/editForms/EditCompany";
 import EditRole from "../components/editForms/EditRole";
@@ -21,12 +21,9 @@ export default function JobPage() {
     console.log(data)
 
     // Helper functions
-    const incrementFollowUp = async() => {
-        await increment(id);
-    };
-    const decrementFollowUp = async() => {
-        await decrement(id);
-    };
+    const handleIncrement = async(direction) => {
+        await followUp(id, direction);
+    }
     const handleDelete = async() => {
         await deleteApplication(id);
     };
@@ -86,8 +83,8 @@ export default function JobPage() {
                     </div>
                     <div>
                         <span>Followed up: </span><span>{data.followed_up}</span>
-                        <button onClick={incrementFollowUp}> + </button>
-                        <button onClick={decrementFollowUp}> - </button>
+                        <button onClick={()=>handleIncrement('increment')}> + </button>
+                        <button onClick={()=>handleIncrement('decrement')}> - </button>
                     </div>
                     <div>
                         <span onClick={()=>setEditFlag("rejected")}>Rejected: </span><span>{showRejected(data.rejected)}</span>
