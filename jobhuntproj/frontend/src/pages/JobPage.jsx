@@ -1,7 +1,7 @@
 import { useParams, useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { deleteApplication, increment, decrement, followUp, } from "../utilities";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import EditCompany from "../components/editForms/EditCompany";
 import EditRole from "../components/editForms/EditRole";
 import EditDate from "../components/editForms/EditDate";
@@ -17,13 +17,27 @@ export default function JobPage() {
     const id = useParams()
     
     // Initialize data state with loader data
-    const [data, setData] = useState(JSON.parse(useLoaderData())); 
-    console.log(data)
+    const [data, setData] = useState(JSON.parse(useLoaderData()));
+    const [followedUp, setFollowedUp] = useState(data.followed_up)
+    // console.log(data)
+    // console.log(followedUp)
+
+    useEffect(()=> {
+        setFollowedUp(data.followed_up);
+    }, [data.followedUp])
 
     // Helper functions
     const handleIncrement = async(direction) => {
-        await followUp(id, direction);
-    }
+        const updatedFollowedUp = direction === 'increment' ? followedUp + 1 : followedUp - 1;
+        console.log(updatedFollowedUp, 'updatedFollowedUp')
+        console.log(data.followed_up)
+        const success = await followUp(id, direction, updatedFollowedUp);
+        if (success) {
+            setFollowedUp(updatedFollowedUp)
+            console.log(data.followed_up) // theres a bug in here somewhere
+        }
+    };
+
     const handleDelete = async() => {
         await deleteApplication(id);
     };
@@ -37,7 +51,7 @@ export default function JobPage() {
         }))
     }
 
-    // These functions will update data
+    // These functions will update specific data fields
     const updateCompany = (newCompany) => updateData("company", newCompany);
     const updateRole = (newRole) => updateData("role", newRole);
     const updateDate = (newDate) => updateData("date_applied", newDate);
@@ -82,7 +96,8 @@ export default function JobPage() {
                         <span onClick={()=>setEditFlag("req_number")}>Req#: </span><span>{data.req_number}</span> 
                     </div>
                     <div>
-                        <span>Followed up: </span><span>{data.followed_up}</span>
+                        {/* this field takes the useState value instead of the data value from the loader. This allows the useEffect to work. */}
+                        <span>Followed up: </span><span>{followedUp}</span>
                         <button onClick={()=>handleIncrement('increment')}> + </button>
                         <button onClick={()=>handleIncrement('decrement')}> - </button>
                     </div>
