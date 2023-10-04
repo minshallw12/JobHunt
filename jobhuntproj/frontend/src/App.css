@@ -22,10 +22,13 @@ input {
 
 .cell {
     width: 300px;
+    margin: 5px;
 }
 .smallCell {
     width: 50px;
+    margin: 5px;
 }
+
 .tableRow {
     display: flex;
     width: 1000px;
@@ -51,4 +54,14 @@ button {
 .center {
     display: flex;
     justify-content: center;
+}
+
+.column {
+    display: flex;
+    justify-content: column;
+}
+
+#entryButton {
+    display: flex;
+    flex-direction: column;
 }

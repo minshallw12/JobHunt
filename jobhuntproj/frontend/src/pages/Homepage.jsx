@@ -1,11 +1,14 @@
 import ApplicationsList from "../components/ApplicationsList";
 import EntryForm from "../components/EntryForm";
+import Stats from "../components/Stats";
 import { useEffect, useState } from "react";
 import { getApplications } from "../utilities";
+import { useLoaderData } from "react-router-dom";
 
 export default function HomePage() {
     const [entries, setEntries] = useState([]);
     const [entryFlag, setEntryFlag] = useState(false);
+    const applications = useLoaderData();
 
     // The useEffect clause rerenders the page when a new entry is added.
     useEffect(() => {
@@ -23,14 +26,25 @@ export default function HomePage() {
     return (
         <div>
             <h1 className="center">Job Hunt CRM</h1>
-            
+
+            <div className="center">
+                <Stats applications={applications}/>
+            </div>
             
             {
-                entryFlag ?
-                
+                entryFlag 
+                ?
                 <div className="center">
-                    <EntryForm onEntryAdded={updateEntries} toggleEntryForm={toggleEntryForm}/>
-                </div> :
+                    <div className="entrybutton">
+                        <EntryForm onEntryAdded={updateEntries} toggleEntryForm={toggleEntryForm}/>
+                        <div className="center">
+                            <button onClick={toggleEntryForm}>Close</button>
+                        </div>
+                        
+                    </div>
+                        
+                </div> 
+                :
                 <div className="center">
                     <button onClick={toggleEntryForm}>Add Entry</button>
                 </div>

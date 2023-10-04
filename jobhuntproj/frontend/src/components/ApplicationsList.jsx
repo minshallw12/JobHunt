@@ -5,15 +5,15 @@ export default function ApplicationsList({ entries }) {
     return (
         <div>
             <h3>My list of applications</h3>
-            <div className="tableRow">
-                <h4 className="smallCell">ID#</h4>
-                <h4 className="cell">Company</h4>
-                <h4 className="cell">Role</h4>
-                <h4 className="cell">Date Applied</h4>
-                <h4 className="cell">Req #</h4>
-                <h4 className="cell">Recruiter</h4>
-            </div>
             <ol>
+                <li className="tableRow">
+                    <h4 className="smallCell">ID#</h4>
+                    <h4 className="cell">Company</h4>
+                    <h4 className="cell">Role</h4>
+                    <h4 className="cell">Date Applied</h4>
+                    <h4 className="cell">Req #</h4>
+                    <h4 className="cell">Recruiter</h4>
+                </li>
                 {/* Mapping the data fields to the respective spaces on frontend in list format */}
                 {entries.map(({ id, company, role, date_applied, req_number, recruiter }) => (
                     <li className="tableRow" key={id}>

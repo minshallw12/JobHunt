@@ -1,6 +1,6 @@
 import { useParams, useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { deleteApplication, increment, decrement, followUp, } from "../utilities";
+import { deleteApplication, followUp, } from "../utilities";
 import { useEffect, useState } from "react";
 import EditCompany from "../components/editForms/EditCompany";
 import EditRole from "../components/editForms/EditRole";
