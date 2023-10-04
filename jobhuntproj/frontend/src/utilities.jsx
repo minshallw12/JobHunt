@@ -24,7 +24,6 @@ export const getApplications = async() => {
 
 export const getApplicationDetails = async(id) => {
     let response = await axios.get(`/application/${id.params.id}`)
-    console.log(response.data)
     return response.data.data
 };
 
@@ -32,27 +31,12 @@ export const getApplicationDetails = async(id) => {
 export const followUp = async(id, direction, followed_up) => {
     try {
         const response = await axios.put(`/${direction}/${id.id}`, {'followed_up':followed_up})
-        console.log(followed_up)
         return response.data.success;
     } catch (error) {
         console.error(`Error updating ${direction}`, error);
         throw error;
     }
 };
-
-// export const increment = async(id, followed_up) => {
-//     console.log(id)
-//     let response = await axios.put(`/increment/${id.id}`, {'followed_up':followed_up})
-//     console.log(response.data)
-//     return response.data
-// };
-
-// export const decrement = async(id, followed_up) => {
-//     console.log(id)
-//     let response = await axios.put(`/decrement/${id.id}`, {'followed_up':followed_up})
-//     console.log(response.data)
-//     return response.data
-// };
 
 export const updateField = async(id, field, value) => {
     try {

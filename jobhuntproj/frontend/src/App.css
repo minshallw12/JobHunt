@@ -42,3 +42,13 @@ button {
     display: flex;
     flex-direction: column;
 }
+
+.datatitle:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}

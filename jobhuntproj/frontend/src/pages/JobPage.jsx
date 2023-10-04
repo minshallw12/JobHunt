@@ -19,8 +19,6 @@ export default function JobPage() {
     // Initialize data state with loader data
     const [data, setData] = useState(JSON.parse(useLoaderData()));
     const [followedUp, setFollowedUp] = useState(data.followed_up)
-    // console.log(data)
-    // console.log(followedUp)
 
     useEffect(()=> {
         setFollowedUp(data.followed_up);
@@ -29,15 +27,11 @@ export default function JobPage() {
     // Helper functions
     const handleIncrement = async(direction) => {
         const updatedFollowedUp = direction === 'increment' ? followedUp + 1 : followedUp - 1;
-        console.log(updatedFollowedUp, 'updatedFollowedUp')
-        console.log(data.followed_up)
         const success = await followUp(id, direction, updatedFollowedUp);
         if (success) {
             setFollowedUp(updatedFollowedUp)
-            console.log(data.followed_up) // theres a bug in here somewhere
         }
     };
-
     const handleDelete = async() => {
         await deleteApplication(id);
     };
@@ -83,17 +77,17 @@ export default function JobPage() {
             <h2>This is a job page</h2>
             <div className="jobPage">
                 <div className="jobDetail">
-                    <div>
-                        <span onClick={()=>setEditFlag("company")}>Company: </span><span>{data.company}</span>
+                    <div >
+                        <span className="datatitle" onClick={()=>setEditFlag("company")}>Company: </span><span>{data.company}</span>
                     </div>
-                    <div>
-                        <span onClick={()=>setEditFlag("role")}>Role: </span><span>{data.role} </span>
+                    <div >
+                        <span className="datatitle" onClick={()=>setEditFlag("role")}>Role: </span><span>{data.role} </span>
                     </div>
-                    <div>
-                        <span onClick={()=>setEditFlag("date_applied")}>Date Applied: </span><span>{data.date_applied}</span>
+                    <div >
+                        <span className="datatitle" onClick={()=>setEditFlag("date_applied")}>Date Applied: </span><span>{data.date_applied}</span>
                     </div>
-                    <div>
-                        <span onClick={()=>setEditFlag("req_number")}>Req#: </span><span>{data.req_number}</span> 
+                    <div >
+                        <span className="datatitle" onClick={()=>setEditFlag("req_number")}>Req#: </span><span>{data.req_number}</span> 
                     </div>
                     <div>
                         {/* this field takes the useState value instead of the data value from the loader. This allows the useEffect to work. */}
@@ -102,19 +96,19 @@ export default function JobPage() {
                         <button onClick={()=>handleIncrement('decrement')}> - </button>
                     </div>
                     <div>
-                        <span onClick={()=>setEditFlag("rejected")}>Rejected: </span><span>{showRejected(data.rejected)}</span>
+                        <span className="datatitle" onClick={()=>setEditFlag("rejected")}>Rejected: </span><span>{showRejected(data.rejected)}</span>
                     </div>
                     <div>
-                        <span onClick={()=>setEditFlag("recruiter")}>Recruiter: </span><span>{data.recruiter} </span>
+                        <span className="datatitle" onClick={()=>setEditFlag("recruiter")}>Recruiter: </span><span>{data.recruiter} </span>
                     </div>
                     <div>
-                        <span onClick={()=>setEditFlag("recruiter_email")}>Recruiter Email: </span><span>{data.recruiter_email}</span>
+                        <span className="datatitle" onClick={()=>setEditFlag("recruiter_email")}>Recruiter Email: </span><span>{data.recruiter_email}</span>
                     </div>
                     <div>
-                        <span onClick={()=>setEditFlag("referral")}>Referral: </span><span>{data.referral} </span>
+                        <span className="datatitle" onClick={()=>setEditFlag("referral")}>Referral: </span><span>{data.referral} </span>
                     </div>
                     <div>
-                        <span onClick={()=>setEditFlag("referral_email")}>Referral Email: </span><span>{data.referral_email}</span>
+                        <span className="datatitle" onClick={()=>setEditFlag("referral_email")}>Referral Email: </span><span>{data.referral_email}</span>
                     </div>
                     <div>
                         <Link to={'/delete'}><button onClick={handleDelete}>Delete</button></Link>
