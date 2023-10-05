@@ -8,6 +8,7 @@ export default function App() {
 
       <div className="App">
         <div className='blue'>
+
           <div className='center' id='container'>
             <Outlet/>
           </div>
@@ -15,13 +16,8 @@ export default function App() {
           <div>
             <Footer/>
           </div>
+
         </div>
-        
-
       </div>
-      
- 
-
-    
   )
 }
