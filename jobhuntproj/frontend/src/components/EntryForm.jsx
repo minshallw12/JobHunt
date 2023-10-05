@@ -42,10 +42,10 @@ export default function EntryForm({onEntryAdded},{toggleEntryFlag}) {
         };
 
     return (
-        <div>
-        <h3>Add an entry here:</h3>
+        <div id="entryForm">
+            <h3 className="center padding">Add a new entry:</h3>
             <form onSubmit={handleAddEntry}>
-                <div className="entryForm">
+                <div className="center">
                     <div className="entryContainer">
                         <div className="entryColumn">
                             <label for="company">Company</label>
@@ -68,7 +68,9 @@ export default function EntryForm({onEntryAdded},{toggleEntryFlag}) {
                             <input type="text" id="referral_email" name="referral_email" onChange={(event) => setReferralEmail(event.target.value)}/>
                         </div>
                     </div>
-                    <button type="submit" onClick={toggleEntryFlag}>Submit entry</button>
+                </div>
+                <div className="center">
+                     <button type="submit" onClick={toggleEntryFlag}>Submit entry</button>
                 </div>
             </form>
         </div>

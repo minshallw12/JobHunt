@@ -56,7 +56,7 @@ export default function EditForm() {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-            <div className="entryForm">
+            <div className="entryForm padding">
                     <div className="entryContainer">
                         <div className="entryColumn">
                             <label htmlFor="company">Company</label>

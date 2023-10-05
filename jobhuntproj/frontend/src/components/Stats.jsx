@@ -21,12 +21,22 @@ export default function Stats({ applications }) {
 
 
     return (
-    <div>
-        <h2>My stats</h2>
-        <h2>Total Applications</h2>
-        <h3>{total}</h3>
-        <h2># of Applications this week</h2>
-        <h3>{weeklyAppsCount}</h3>
+    <div className="column">
+        <div className="center">
+            <h2 className="padding underline">Current Stats</h2>
+        </div>
+        
+        <div id="statbox">
+            <div className="totalApps">
+                <h2>Total Applications:</h2>
+                <h2 className="padding">{total}</h2>
+            </div>
+            <div className="weeklyApps">
+                <h2># of Job Apps this week:</h2>
+                <h2 className="padding">{weeklyAppsCount}</h2>
+            </div>
+        </div>
+        
     </div>
     );
 }

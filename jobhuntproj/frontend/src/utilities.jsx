@@ -12,11 +12,6 @@ export const addEntry = async (
     referral_email
   ) => {
     try {
-      // Validation: Check if required fields are filled
-    //   if (!company || !role || !date_applied) {
-    //     throw new Error("Company, Role, and Date applied are required fields.");
-    //   }
-
       if (!company) {
         throw new Error("Company field is required");
       }

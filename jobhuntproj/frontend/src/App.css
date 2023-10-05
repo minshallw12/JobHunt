@@ -1,3 +1,7 @@
+* {
+    margin: 0px;
+}
+
 .entryForm {
     display: flex;
     flex-direction: column;
@@ -59,6 +63,16 @@ button {
 .column {
     display: flex;
     flex-direction: column;
+    margin: 10px;
+}
+.padding {
+    padding: 10px;
+}
+.sm-padding {
+    padding: 2px;
+}
+.underline {
+    text-decoration: underline;
 }
 .center-column {
     display: flex;
@@ -66,8 +80,86 @@ button {
     align-items: center;
     flex-direction: column;
 }
+#statbox {
+    display: flex;
+    justify-content: space-around;
+}
 
 #entryButton {
     display: flex;
     flex-direction: column;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.blue {
+    background-color: rgb(37, 118, 134);
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#container {
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    border: darkslategray 2px solid;
+    margin: 25px;
+    margin-bottom: 50px;
+    padding: 15px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px darkslategrey;
+}
+
+.totalApps, .weeklyApps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    height: 180px;
+    border: 1px solid black;
+    box-shadow: 5px 5px darkgrey;
+    border-radius: 5px;
+}
+
+#entryForm {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 600px;
+    box-shadow: 5px 5px darkgrey;
+    border-radius: 5px;
+
+}
+
+#applicationsList {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px darkgrey;
+    border-radius: 5px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    color: rgb(181, 185, 185);
 }

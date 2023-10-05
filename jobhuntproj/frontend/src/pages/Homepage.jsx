@@ -25,7 +25,7 @@ export default function HomePage() {
     // The current entries are stored in the useState and passed to the ApplicationsList component.
     return (
         <div>
-            <h1 className="center">Job Hunt CRM</h1>
+            <h1 className="center padding">Job Tracker</h1>
             
                 {
                     entryFlag 
@@ -42,13 +42,16 @@ export default function HomePage() {
                     </div> 
                     :
 
-                    <div className="center-column">
+                    <div className="stats">
                         <Stats applications={applications}/>
-                        <button onClick={toggleEntryForm}>Add Entry</button>
+                        <div className="center">
+                            <button onClick={toggleEntryForm}>Add Entry</button>
+                        </div>
+                        
                     </div>
                 }
             
-            <div className="center">
+            <div className="center padding">
                 <ApplicationsList  entries={entries} />
             </div>
 
