@@ -58,7 +58,13 @@ button {
 
 .column {
     display: flex;
-    justify-content: column;
+    flex-direction: column;
+}
+.center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #entryButton {

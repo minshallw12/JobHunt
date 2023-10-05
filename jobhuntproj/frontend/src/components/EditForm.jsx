@@ -17,6 +17,12 @@ export default function EditForm() {
     const handleSubmit = async (event) => {
         event.preventDefault();
     
+          // Check if Company, Role, and Date applied fields are blank
+        if (!company || !role || !date_applied) {
+          alert("Company, Role, and Date applied are required fields.");
+          return; // Prevent form submission if fields are blank
+        };
+
         // Call editEntry with id and other data
         const success = await editEntry(
           id, // Use the 'id' from the URL
@@ -53,23 +59,23 @@ export default function EditForm() {
             <div className="entryForm">
                     <div className="entryContainer">
                         <div className="entryColumn">
-                            <label for="company">Company</label>
+                            <label htmlFor="company">Company</label>
                             <input type="text" id="company" name="company" onChange={(event) => setCompany(event.target.value)}/>
-                            <label for="role">Role</label>
+                            <label htmlFor="role">Role</label>
                             <input type="text" id="role" name="role" onChange={(event) => setRole(event.target.value)}/>
-                            <label for="date_applied">Date applied</label>
+                            <label htmlFor="date_applied">Date applied</label>
                             <input type="date" id="date_applied" name="date_applied" onChange={(event) => setDateApplied(event.target.value)}/>
-                            <label for="req_number">Req#</label>
+                            <label htmlFor="req_number">Req#</label>
                             <input type="text" id="req_number" name="req_number" onChange={(event) => setReqNumber(event.target.value)}/>
                         </div>
                         <div className="entryColumn">
-                            <label for="recruiter">Recruiter</label>
-                            <input type="text" id="recruiter" name="rectuiter" onChange={(event) => setRecruiter(event.target.value)}/>
-                            <label for="recruiter_email">Recruiter Email</label>
-                            <input type="text" id="rectuiter_email" name="rectuiter_email" onChange={(event) => setRecruiterEmail(event.target.value)}/>
-                            <label for="referral">Referral Name</label>
+                            <label htmlFor="recruiter">Recruiter</label>
+                            <input type="text" id="recruiter" name="recruiter" onChange={(event) => setRecruiter(event.target.value)}/>
+                            <label htmlFor="recruiter_email">Recruiter Email</label>
+                            <input type="text" id="recruiter_email" name="recruiter_email" onChange={(event) => setRecruiterEmail(event.target.value)}/>
+                            <label htmlFor="referral">Referral Name</label>
                             <input type="text" id="referral" name="referral" onChange={(event) => setReferral(event.target.value)}/>
-                            <label for="referral_email">Referral Email</label>
+                            <label htmlFor="referral_email">Referral Email</label>
                             <input type="text" id="referral_email" name="referral_email" onChange={(event) => setReferralEmail(event.target.value)}/>
                         </div>
                     </div>

@@ -26,29 +26,27 @@ export default function HomePage() {
     return (
         <div>
             <h1 className="center">Job Hunt CRM</h1>
-
-            <div className="center">
-                <Stats applications={applications}/>
-            </div>
             
-            {
-                entryFlag 
-                ?
-                <div className="center">
-                    <div className="entrybutton">
-                        <EntryForm onEntryAdded={updateEntries} toggleEntryForm={toggleEntryForm}/>
-                        <div className="center">
-                            <button onClick={toggleEntryForm}>Close</button>
+                {
+                    entryFlag 
+                    ?
+                    <div className="center">
+                        <div className="entrybutton">
+                            <EntryForm onEntryAdded={updateEntries} toggleEntryForm={toggleEntryForm}/>
+                            <div className="center">
+                                <button onClick={toggleEntryForm}>Close</button>
+                            </div>
+                            
                         </div>
-                        
+                            
+                    </div> 
+                    :
+
+                    <div className="center-column">
+                        <Stats applications={applications}/>
+                        <button onClick={toggleEntryForm}>Add Entry</button>
                     </div>
-                        
-                </div> 
-                :
-                <div className="center">
-                    <button onClick={toggleEntryForm}>Add Entry</button>
-                </div>
-            }
+                }
             
             <div className="center">
                 <ApplicationsList  entries={entries} />
