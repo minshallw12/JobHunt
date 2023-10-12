@@ -1,25 +1,26 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, useLoaderData } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { followUp, followUpFromList } from "../utilities";
 
 // We are passing the current list of entries as a prop from the HomePage page.
 export default function ApplicationsList({ entries }) {
-    const [followedUp, setFollowedUp] = useState({});
+    const initialData = useLoaderData()
+    const [data, setData] = useState(initialData);
+    const [followedUp, setFollowedUp] = useState(data.followed_up)
 
-        // Function to increment the followedUp field for a specific application
-        const incrementFollowedUp = (id) => {
-            setFollowedUp((prevFollowedUp) => ({
-                ...prevFollowedUp,
-                [id]: (prevFollowedUp[id] || 0) + 1,
-            }));
-        };
-    
-        // Function to decrement the followedUp field for a specific application
-        const decrementFollowedUp = (id) => {
-            setFollowedUp((prevFollowedUp) => ({
-                ...prevFollowedUp,
-                [id]: (prevFollowedUp[id] || 0) - 1,
-            }));
-        };
+    useEffect(()=> {
+        setFollowedUp(data.followed_up);
+    }, [data.followed_up])
+
+    const handleIncrement = async(id, direction) => {
+        console.log(id)
+        const updatedFollowedUp = direction === 'increment' ? followedUp + 1 : followedUp - 1;
+        const updatedData = await followUpFromList(id, direction, updatedFollowedUp);
+        if (updatedData) {
+            setFollowedUp(updatedData)
+        }
+    };
+
 
     return (
         <div id="applicationsList">
@@ -44,9 +45,10 @@ export default function ApplicationsList({ entries }) {
                         <span className="cell">{company}</span>
                         <span className="cell">{role}</span>
                         <span className="cell">{date_applied}</span>
-                        <span className="cell">{followed_up}</span>
-                        <button onClick={() => incrementFollowedUp(id)}>+</button>
-                        <button onClick={() => decrementFollowedUp(id)}>-</button>
+                        <span className="cell">{followed_up}
+                            <button onClick={() => handleIncrement(id, 'increment')}>+</button>
+                            <button onClick={() => handleIncrement(id, 'decrement')}>-</button>
+                        </span>
                         <span className="cell">{req_number}</span>
                         <span className="cell">{recruiter}</span>
                     </li>

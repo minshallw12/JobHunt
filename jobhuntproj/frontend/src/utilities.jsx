@@ -75,6 +75,23 @@ export const followUp = async(id, direction, followed_up) => {
     }
 };
 
+export const followUpFromList = async(id, direction, followed_up) => {
+  try {
+      const response = await axios.put(`/${direction}/${id}`, {'followed_up':followed_up})
+      if (response.data.success) {
+        // If the operation is successful, make an API call to get the updated data
+        const updatedDataResponse = await axios.get("/getapplications/");
+        const updatedData = updatedDataResponse.data.applications;
+        return updatedData;
+    } else {
+        throw new Error("Follow-up operation failed.");
+    }
+  } catch (error) {
+      console.error(`Error updating ${direction}`, error);
+      throw error;
+  }
+};
+
 export const updateField = async(id, field, value) => {
     try {
         const response = await axios.put(`/edit${field}/${id}`, {
