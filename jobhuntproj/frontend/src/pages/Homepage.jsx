@@ -13,7 +13,9 @@ export default function HomePage() {
     // The useEffect clause rerenders the page when a new entry is added.
     useEffect(() => {
         getApplications().then((data) => {
-            setEntries(data);
+            // sorts entries by id (order added)
+            const sortedEntries = data.sort((a,b) => b.id - a.id);
+            setEntries(sortedEntries);
         });
     }, []);
 

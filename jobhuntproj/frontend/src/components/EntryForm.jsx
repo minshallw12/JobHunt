@@ -2,7 +2,7 @@ import { useState } from "react";
 import { addEntry, getApplications } from "../utilities";
 
 
-export default function EntryForm({onEntryAdded},{toggleEntryFlag}) {
+export default function EntryForm({onEntryAdded,toggleEntryFlag}) {
     const [company, setCompany] = useState(null);
     const [role, setRole] = useState(null)
     const [date_applied, setDateApplied] = useState(null)
@@ -61,7 +61,7 @@ export default function EntryForm({onEntryAdded},{toggleEntryFlag}) {
                             <label for="recruiter">Recruiter</label>
                             <input type="text" id="recruiter" name="rectuiter" onChange={(event) => setRecruiter(event.target.value)}/>
                             <label for="recruiter_email">Recruiter Email</label>
-                            <input type="text" id="rectuiter_email" name="rectuiter_email" onChange={(event) => setRecruiterEmail(event.target.value)}/>
+                            <input type="text" id="recruiter_email" name="recruiter_email" onChange={(event) => setRecruiterEmail(event.target.value)}/>
                             <label for="referral">Referral Name</label>
                             <input type="text" id="referral" name="referral" onChange={(event) => setReferral(event.target.value)}/>
                             <label for="referral_email">Referral Email</label>

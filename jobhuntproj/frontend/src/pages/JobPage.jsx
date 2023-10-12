@@ -17,7 +17,8 @@ export default function JobPage() {
     const id = useParams()
     
     // Initialize data state with loader data
-    const [data, setData] = useState(JSON.parse(useLoaderData()));
+    const initialData = useLoaderData()
+    const [data, setData] = useState(JSON.parse(initialData));
     const [followedUp, setFollowedUp] = useState(data.followed_up)
 
     useEffect(()=> {
@@ -115,7 +116,7 @@ export default function JobPage() {
                     </div>
                 </div>
 
-        <div>{editComponents[editFlag]}</div>
+        <div>{editFlag && editComponents[editFlag]}</div>
         
             </div>
         </div>
