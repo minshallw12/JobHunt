@@ -9,7 +9,8 @@
     "watch": "vite build --watch",
     "preview": "vite preview",
     "test": "jest",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:run": "npx cypress run --spec"
   },
   "dependencies": {
     "axios": "^1.5.1",
