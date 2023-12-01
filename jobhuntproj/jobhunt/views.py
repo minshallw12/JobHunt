@@ -95,6 +95,7 @@ class CustomEncoder(json.JSONEncoder):
         return super().default(obj)
 
 # Update
+# Consolidate all of these PUT request views using OOP?
 @api_view(['PUT'])
 def increment(request, id):
     my_job = get_object_or_404(Jobs, id=id)
