@@ -9,7 +9,8 @@ export const addEntry = async (
     recruiter,
     recruiter_email,
     referral,
-    referral_email
+    referral_email,
+    portal_url
   ) => {
     try {
       if (!company) {
@@ -32,6 +33,7 @@ export const addEntry = async (
         recruiter_email,
         referral,
         referral_email,
+        portal_url
       });
   
       // Check the response for success
@@ -94,7 +96,7 @@ export const followUpFromList = async(id, direction, followed_up) => {
 
 export const updateField = async(id, field, value) => {
     try {
-        const response = await axios.put(`/edit${field}/${id}`, {
+        const response = await axios.put(`/editjob/${id}/${field}`, {
             [field]: value,
         });
         return response.data.success;

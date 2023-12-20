@@ -22,6 +22,7 @@ def addEntry(request):
     recruiter_email = request.data['recruiter_email']
     referral = request.data['referral']
     referral_email = request.data['referral_email']
+    portal_url = request.data['portal_url']
     # user_id = request.data['user_id']
 
     try:
@@ -37,6 +38,7 @@ def addEntry(request):
             recruiter_email = recruiter_email,
             referral = referral,
             referral_email = referral_email,
+            portal_url = portal_url
             # user_id = user_id
             )
         new_application.save()
@@ -84,6 +86,7 @@ class CustomEncoder(json.JSONEncoder):
                 "recruiter_email": obj.recruiter_email,
                 "referral": obj.referral,
                 "referral_email": obj.referral_email,
+                "portal_url": obj.portal_url,
                 "user": obj.user
             }
         elif isinstance(obj,Interviews):
@@ -117,6 +120,46 @@ def decrement(request, id):
         return JsonResponse({'success': True})
     
     return JsonResponse({'success': False})
+
+@api_view(['PUT'])
+def editJob(request, id, field):
+
+    my_job = get_object_or_404(Jobs, id=id)
+    if request.method == "PUT":
+        match field:
+            case "company":
+                my_job.company = request.data["company"]
+                my_job.save()
+            case "role":
+                my_job.role = request.data["role"]
+                my_job.save()
+            case "date_applied":
+                my_job.date_applied = request.data["date_applied"]
+                my_job.save()
+            case "req_number":
+                my_job.req_number = request.data["req_number"]
+                my_job.save()
+            case "rejected":
+                my_job.rejected = request.data["rejected"]
+                my_job.save()
+            case "recruiter":
+                my_job.recruiter = request.data["recruiter"]
+                my_job.save()
+            case "recruiter_email":
+                my_job.recruiter_email = request.data["recruiter_email"]
+                my_job.save()
+            case "referral":
+                my_job.referral = request.data["referral"]
+                my_job.save()
+            case "referral_email":
+                my_job.referral_email = request.data["referral_email"]
+                my_job.save()
+            case "portal_url":
+                my_job.portal_url = request.data["portal_url"]
+                my_job.save()
+        return JsonResponse({'success': True})
+    return JsonResponse({'success': False})
+
 
 @api_view(['PUT'])
 def editCompany(request, id):

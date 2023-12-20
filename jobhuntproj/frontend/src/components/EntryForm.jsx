@@ -11,6 +11,7 @@ export default function EntryForm({onEntryAdded,toggleEntryFlag}) {
     const [recruiter_email, setRecruiterEmail] = useState(null)
     const [referral, setReferral] = useState(null)
     const [referral_email, setReferralEmail] = useState(null)
+    const [portal_url, setPortalUrl] = useState(null)
 
     // When we add a new entry we fetch the entire list of entries and update our current list.
     const handleAddEntry = async () => {
@@ -22,7 +23,8 @@ export default function EntryForm({onEntryAdded,toggleEntryFlag}) {
             recruiter,
             recruiter_email,
             referral,
-            referral_email
+            referral_email,
+            portal_url,
         );
         // Fetching entries
         const updatedEntries = await getApplications();
@@ -38,7 +40,8 @@ export default function EntryForm({onEntryAdded,toggleEntryFlag}) {
         setRecruiter(""),
         setRecruiterEmail(""),
         setReferral(""),
-        setReferralEmail("")
+        setReferralEmail(""),
+        setPortalUrl("")
         };
 
     return (
@@ -67,8 +70,15 @@ export default function EntryForm({onEntryAdded,toggleEntryFlag}) {
                             <label for="referral_email">Referral Email</label>
                             <input type="text" id="referral_email" name="referral_email" onChange={(event) => setReferralEmail(event.target.value)}/>
                         </div>
+                        
                     </div>
                 </div>
+                <div className="center">
+                    <label for="portal_url">Login Portal</label>
+                    <input type="text" id="portal_url" name="portal_url" onChange={(event) => setPortalUrl(event.target.value)} />
+                </div>
+                
+                
                 <div className="center">
                      <button type="submit" onClick={toggleEntryFlag}>Submit entry</button>
                 </div>

@@ -22,6 +22,7 @@ class Jobs (models.Model):
     recruiter_email = models.EmailField(max_length=254, blank=True, null=True)
     referral = models.CharField(max_length=254, blank=True, null=True)
     referral_email = models.EmailField(max_length=254, blank=True, null=True)
+    portal_url = models.URLField(null=True, blank=True)
     user = models.ForeignKey(App_User, on_delete=models.CASCADE, null=True)
 
     def __str__(self) -> str:

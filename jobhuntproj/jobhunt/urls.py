@@ -8,6 +8,7 @@ urlpatterns = [
     path('application/<int:id>', views.getApplicationDetails, name='getApplicationDetails'),
     path('increment/<int:id>', views.increment, name='increment'),
     path('decrement/<int:id>', views.decrement, name='decrement'),
+    path('editjob/<int:id>/<str:field>', views.editJob, name='editjob'), # this route's front end needs to be finished
     path('editcompany/<int:id>', views.editCompany, name='editcompany'),
     path('editrole/<int:id>', views.editRole, name='editrole'),
     path('editdate_applied/<int:id>', views.editDate, name='editdate'),

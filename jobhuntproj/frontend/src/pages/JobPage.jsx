@@ -1,6 +1,6 @@
 import { useParams, useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { deleteApplication, followUp, } from "../utilities";
+import { deleteApplication, followUp, updateField } from "../utilities";
 import { useEffect, useState } from "react";
 import EditCompany from "../components/editForms/EditCompany";
 import EditRole from "../components/editForms/EditRole";
@@ -110,6 +110,9 @@ export default function JobPage() {
                     </div>
                     <div>
                         <span className="datatitle" onClick={()=>setEditFlag("referral_email")}>Referral Email: </span><span>{data.referral_email}</span>
+                    </div>
+                    <div>
+                        <span className="datatitle" onClick={()=>setEditFlag("portal_url")}>Applicant Portal: </span><a href={data.portal_url} target="_blank">{data.portal_url}</a>
                     </div>
                     <div>
                         <Link to={'/delete'}><button onClick={handleDelete}>Delete</button></Link>
