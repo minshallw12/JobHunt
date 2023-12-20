@@ -5,6 +5,7 @@ import Error from "./components/Error";
 import { getApplications, getApplicationDetails } from "./utilities";
 import JobPage from "./pages/JobPage";
 import Delete from "./pages/Delete";
+import Interviews from "./pages/Interviews";
 
 const router = createHashRouter([{
     path: '/',
@@ -24,6 +25,10 @@ const router = createHashRouter([{
         {
             path: '/delete',
             element: <Delete/>
+        },
+        {
+            path: '/interviews',
+            element: <Interviews/>
         }
         
     ]

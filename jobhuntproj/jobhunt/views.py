@@ -46,6 +46,26 @@ def addEntry(request):
     except Exception as e:
         print(e)
         return JsonResponse({"success":False})
+    
+@api_view(['POST'])
+def createInterview(request, id):
+    job_id = id
+    round = 1
+    offer = False
+    notes = "None"
+    try:
+        interview = Interviews.objects.create(
+            job_id = job_id,
+            round = round,
+            offer = offer,
+            notes = notes
+        )
+        interview.save()
+        return JsonResponse({'success': True})
+    except Exception as e:
+        print(e)
+        return JsonResponse({'success': False})
+
 
 # Read
 @api_view(['GET'])
@@ -70,6 +90,16 @@ def getApplicationDetails(request, id):
     except Exception as e:
         print(e)
         return JsonResponse({'data': None})
+    
+@api_view(['GET'])
+def getInterviews(request):
+    print(request, 'getInterviews')
+    try:
+        interviews = list(Interviews.objects.all().values())
+        return JsonResponse({'interviews': interviews})
+    except Exception as e:
+        print(e)
+        return JsonResponse({"interviews": "error collecting interviews"})
     
     # This function serializes the data to return an object
 class CustomEncoder(json.JSONEncoder):

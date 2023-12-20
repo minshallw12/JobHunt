@@ -29,9 +29,10 @@ class Jobs (models.Model):
         return f"{self.company} | {self.role} | Dunder"
 
 class Interviews (models.Model):
-    job = models.ForeignKey(Jobs, on_delete=models.CASCADE, null=True)
+    job_id = models.IntegerField(null=True)
+    round = models.IntegerField(default=1)
     offer = models.BooleanField(default=False)
-    notes = models.CharField(max_length=254)
+    notes = models.TextField(null=True, blank=True)
 
     def __str__(self) -> str:
         return f"{self.job} | Dunder"

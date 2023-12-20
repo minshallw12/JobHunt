@@ -3,11 +3,13 @@ import EntryForm from "../components/EntryForm";
 import Stats from "../components/Stats";
 import { useEffect, useState } from "react";
 import { getApplications } from "../utilities";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 
 export default function HomePage() {
     const [entries, setEntries] = useState([]);
     const [entryFlag, setEntryFlag] = useState(false);
+    const navigate = useNavigate();
+
     const applications = useLoaderData();
 
     // The useEffect clause rerenders the page when a new entry is added.
@@ -48,6 +50,7 @@ export default function HomePage() {
                         <Stats applications={applications}/>
                         <div className="center">
                             <button onClick={toggleEntryForm}>Add Entry</button>
+                            <button onClick={()=> navigate('/interviews')}>Interviews</button>
                         </div>
                         
                     </div>
