@@ -28,15 +28,22 @@ input {
     width: 300px;
     margin: 5px;
 }
+
+td {
+    width: 300px;
+    margin: 5px;
+}
+
 .smallCell {
     width: 50px;
     margin: 5px;
 }
 
 .tableRow {
-    display: flex;
+    /* display: flex; */
     width: 1000px;
 }
+
 
 button {
     margin: 2px;

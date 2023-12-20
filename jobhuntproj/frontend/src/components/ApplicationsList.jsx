@@ -25,35 +25,40 @@ export default function ApplicationsList({ entries }) {
     return (
         <div id="applicationsList">
             <h2 className="padding center">Applications List</h2>
-            <ol>
-                <li className="tableRow padding">
-                    <h4 className="smallCell">ID#</h4>
-                    <h4 className="cell">Company</h4>
-                    <h4 className="cell">Role</h4>
-                    <h4 className="cell">Date Applied</h4>
-                    <h4 className="cell">Followed Up</h4>
-                    <h4 className="cell">Req #</h4>
-                    <h4 className="cell">Recruiter</h4>
-                </li>
-                {/* Mapping the data fields to the respective spaces on frontend in list format */}
-                {entries.map(({ id, company, role, date_applied, followed_up, req_number, recruiter }) => (
-                    <li className="tableRow sm-padding" key={id}>
-                        <span className="smallCell">{id}</span>
-                        <Link to={`/application/${id}`}>
-                            <button>Go</button>
-                        </Link>
-                        <span className="cell">{company}</span>
-                        <span className="cell">{role}</span>
-                        <span className="cell">{date_applied}</span>
-                        <span className="cell">{followed_up}
+            <table>
+                <tr>
+                    <th>ID#</th>
+                    <th >Company</th>
+                    <th>Role</th>
+                    <th>Date Applied</th>
+                    <th>Followed Up</th>
+                    <th>Req #</th>
+                    <th>App Portal</th>
+                </tr>
+               
+                {entries.map(({ id, company, role, date_applied, followed_up, req_number, recruiter, portal_url }) => (
+                    <tr key={id}>
+                        <td>
+                            <div>
+                                {id}
+                                <Link to={`/application/${id}`}>
+                                    <button>Go</button>
+                                </Link>
+                            </div>
+                            
+                        </td>
+                        <td>{company}</td>
+                        <td>{role}</td>
+                        <td>{date_applied}</td>
+                        <td>{followed_up}
                             <button onClick={() => handleIncrement(id, 'increment')}>+</button>
                             <button onClick={() => handleIncrement(id, 'decrement')}>-</button>
-                        </span>
-                        <span className="cell">{req_number}</span>
-                        <span className="cell">{recruiter}</span>
-                    </li>
+                        </td>
+                        <td>{req_number}</td>
+                        <td><a href={portal_url}>{portal_url}</a></td>
+                    </tr>
                 ))}
-            </ol>
+            </table>
         </div>
     );
 }
