@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { updateField } from "../../utilities";
 
-export default function EditRejected({onRejectedUpdated}) {
+export default function EditRejected({onRejectedUpdated, setEditFlag }) {
     const { id } = useParams()
     const [rejected, setRejected] = useState(null);
 
@@ -13,6 +13,7 @@ export default function EditRejected({onRejectedUpdated}) {
     
         if (success) {
           onRejectedUpdated(rejected);
+          setEditFlag(null);
           } else {
           console.error("Edit request failed");
           };

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { updateField } from "../../utilities";
 
-export default function EditReq({onReqUpdated}) {
+export default function EditReq({onReqUpdated, setEditFlag }) {
     const { id } = useParams()
     const [req_number, setReq] = useState(null);
 
@@ -14,6 +14,7 @@ export default function EditReq({onReqUpdated}) {
         if (success) {
           onReqUpdated(req_number)
           setReq("");
+          setEditFlag(null);
         } else {
           console.error("Edit request failed");
         }

@@ -11,6 +11,7 @@ import EditReferral from "../components/editForms/EditReferral";
 import EditReferralEmail from "../components/editForms/EditReferralEmail";
 import EditReq from "../components/editForms/EditReq";
 import EditRejected from "../components/editForms/EditRejected";
+import EditPortal from "../components/editForms/EditPortal";
 
 export default function JobPage() {
     const [editFlag, setEditFlag] = useState(null)
@@ -56,18 +57,20 @@ export default function JobPage() {
     const updateRecruiterEmail = (newRecruiterEmail) => updateData("recruiter_email", newRecruiterEmail);
     const updateReferral = (newRef) => updateData("referral", newRef);
     const updateReferralEmail = (newRefEmail) => updateData("referral_email", newRefEmail);
+    const updatePortal = (newPortal) => updateData("portal_url", newPortal);
 
     // this maps the proper edit form when the user selects a field to edit
     const editComponents = {
-        company: <EditCompany onCompanyUpdated={updateCompany} />,
-        role: <EditRole onRoleUpdated={updateRole} />,
-        date_applied: <EditDate onDateUpdated={updateDate} />,
-        req_number: <EditReq onReqUpdated={updateReq} />,
-        rejected: <EditRejected onRejectedUpdated={updateRejected} />,
-        recruiter: <EditRecruiter onRecruiterUpdated={updateRecruiter} />,
-        recruiter_email: <EditRecruiterEmail onRecEmailUpdated={updateRecruiterEmail} />,
-        referral: <EditReferral onReferralUpdated={updateReferral} />,
-        referral_email: <EditReferralEmail onRefEmailUpdated={updateReferralEmail} />,
+        company: <EditCompany onCompanyUpdated={updateCompany} setEditFlag={setEditFlag} />,
+        role: <EditRole onRoleUpdated={updateRole}  setEditFlag={setEditFlag} />,
+        date_applied: <EditDate onDateUpdated={updateDate}  setEditFlag={setEditFlag} />,
+        req_number: <EditReq onReqUpdated={updateReq}  setEditFlag={setEditFlag} />,
+        rejected: <EditRejected onRejectedUpdated={updateRejected}  setEditFlag={setEditFlag} />,
+        recruiter: <EditRecruiter onRecruiterUpdated={updateRecruiter}  setEditFlag={setEditFlag} />,
+        recruiter_email: <EditRecruiterEmail onRecEmailUpdated={updateRecruiterEmail}  setEditFlag={setEditFlag} />,
+        referral: <EditReferral onReferralUpdated={updateReferral}  setEditFlag={setEditFlag} />,
+        referral_email: <EditReferralEmail onRefEmailUpdated={updateReferralEmail}  setEditFlag={setEditFlag} />,
+        portal_url: <EditPortal onPortalUpdated={updatePortal} setEditFlag={setEditFlag} />
       };
       
 

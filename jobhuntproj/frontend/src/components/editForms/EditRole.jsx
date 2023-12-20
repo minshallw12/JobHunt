@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { updateField } from "../../utilities";
 
-export default function EditRole({onRoleUpdated}) {
+export default function EditRole({onRoleUpdated, setEditFlag }) {
     const { id } = useParams()
     const [role, setRole] = useState(null);
 
@@ -14,6 +14,7 @@ export default function EditRole({onRoleUpdated}) {
         if (success) {
           onRoleUpdated(role);
           setRole("");
+          setEditFlag(null);
         } else {
           console.error("Edit request failed");
         }

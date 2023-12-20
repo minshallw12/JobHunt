@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { updateField } from "../../utilities";
 
-export default function EditDate({onDateUpdated}) {
+export default function EditDate({onDateUpdated, setEditFlag }) {
     const { id } = useParams()
     const [date, setDate] = useState(null);
 
@@ -13,7 +13,8 @@ export default function EditDate({onDateUpdated}) {
     
         if (success) {
           onDateUpdated(date);
-          setDate("")
+          setDate("");
+          setEditFlag(null);
         } else {
           console.error("Edit request failed");
         }
