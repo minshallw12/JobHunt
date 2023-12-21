@@ -71,6 +71,11 @@ export const getInterviews = async() => {
     return response.data
 };
 
+export const getInterview = async(id) => {
+  let response = await axios.get(`/application/${id.params.id}`)
+  return response.data.data
+}
+
 // Update
 export const followUp = async(id, direction, followed_up) => {
     try {

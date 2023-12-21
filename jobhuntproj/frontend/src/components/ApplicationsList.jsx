@@ -55,7 +55,12 @@ export default function ApplicationsList({ entries }) {
                             <button onClick={() => handleIncrement(id, 'decrement')}>-</button>
                         </td>
                         <td>{req_number}</td>
-                        <td><a href={portal_url}>{portal_url}</a></td>
+                        {
+                            portal_url ?
+                                <td><a href={portal_url} target="_blank">Visit</a></td>
+                            :
+                                <td></td>
+                        }
                     </tr>
                 ))}
             </table>

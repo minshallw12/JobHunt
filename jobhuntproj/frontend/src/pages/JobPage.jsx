@@ -1,6 +1,6 @@
 import { useParams, useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { deleteApplication, followUp, updateField } from "../utilities";
+import { deleteApplication, followUp, getInterview } from "../utilities";
 import { useEffect, useState } from "react";
 import EditCompany from "../components/editForms/EditCompany";
 import EditRole from "../components/editForms/EditRole";
@@ -15,6 +15,7 @@ import EditPortal from "../components/editForms/EditPortal";
 
 export default function JobPage() {
     const [editFlag, setEditFlag] = useState(null)
+    const [interview, setInterview] = useState(null)
     const id = useParams()
     
     // Initialize data state with loader data
@@ -25,6 +26,13 @@ export default function JobPage() {
     useEffect(()=> {
         setFollowedUp(data.followed_up);
     }, [data.followedUp])
+
+    // useEffect(()=> {
+    //     console.log(id.id)
+    //     let response = getInterview(id.id)
+    //     console.log(response)
+    //     setInterview(response)
+    // }, [])
 
     // Helper functions
     const handleIncrement = async(direction) => {
@@ -45,7 +53,7 @@ export default function JobPage() {
             ...prevData,
             [property]:newValue
         }))
-    }
+    };
 
     // These functions will update specific data fields
     const updateCompany = (newCompany) => updateData("company", newCompany);
