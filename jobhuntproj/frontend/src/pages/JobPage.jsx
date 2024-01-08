@@ -27,13 +27,6 @@ export default function JobPage() {
         setFollowedUp(data.followed_up);
     }, [data.followedUp])
 
-    // useEffect(()=> {
-    //     console.log(id.id)
-    //     let response = getInterview(id.id)
-    //     console.log(response)
-    //     setInterview(response)
-    // }, [])
-
     // Helper functions
     const handleIncrement = async(direction) => {
         const updatedFollowedUp = direction === 'increment' ? followedUp + 1 : followedUp - 1;
