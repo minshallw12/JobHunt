@@ -170,3 +170,7 @@ button {
     margin-bottom: 30px;
     color: rgb(181, 185, 185);
 }
+
+.red {
+    color: red;
+}

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function ListItem({ id, company, role, date_applied, followed_up, req_number, portal_url }) {
+export default function ListItem({ id, company, role, date_applied, followed_up, rejected, req_number, portal_url }) {
     return (
         <tr key={id}>
             <td>
@@ -12,6 +12,11 @@ export default function ListItem({ id, company, role, date_applied, followed_up,
                 </div>
                 
             </td>
+            {
+                rejected ?
+                <td className="red">{company}</td>:
+                <td>{company}</td>
+            }
             <td>{company}</td>
             <td>{role}</td>
             <td>{date_applied}</td>

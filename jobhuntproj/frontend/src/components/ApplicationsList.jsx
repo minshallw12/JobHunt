@@ -38,33 +38,7 @@ export default function ApplicationsList({ entries }) {
                 </tr>
                
                 {entries.map(({ id, company, role, date_applied, followed_up, req_number, rejected, portal_url }) => (
-                    <ListItem id={id} company={company} role={role} date_applied={date_applied} followed_up={followed_up} req_number={req_number} portal_url={portal_url}/>
-                    
-                    // <tr key={id}>
-                    //     <td>
-                    //         <div>
-                    //             {id}
-                    //             <Link to={`/application/${id}`}>
-                    //                 <button>Go</button>
-                    //             </Link>
-                    //         </div>
-                            
-                    //     </td>
-                    //     <td>{company}</td>
-                    //     <td>{role}</td>
-                    //     <td>{date_applied}</td>
-                    //     <td>{followed_up}
-                    //         <button onClick={() => handleIncrement(id, 'increment')}>+</button>
-                    //         <button onClick={() => handleIncrement(id, 'decrement')}>-</button>
-                    //     </td>
-                    //     <td>{req_number}</td>
-                    //     {
-                    //         portal_url ?
-                    //             <td><a href={portal_url} target="_blank">Visit</a></td>
-                    //         :
-                    //             <td></td>
-                    //     }
-                    // </tr>
+                    <ListItem id={id} company={company} role={role} date_applied={date_applied} followed_up={followed_up} rejected={rejected} req_number={req_number} portal_url={portal_url}/>
                 ))}
             </table>
         </div>
