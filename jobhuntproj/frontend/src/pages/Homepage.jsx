@@ -4,11 +4,13 @@ import Stats from "../components/Stats";
 import { useEffect, useState } from "react";
 import { getApplications } from "../utilities";
 import { useLoaderData, useNavigate } from "react-router-dom";
+import InterviewsList from "../components/InterviewsList";
 
 export default function HomePage() {
     const [entries, setEntries] = useState([]);
+    const [interviews, setInterviews] = useState([]); //  <-- Need to build this out
+    const [interviewFlag, setIntervewFlag]= useState(false);
     const [entryFlag, setEntryFlag] = useState(false);
-    const navigate = useNavigate();
 
     const applications = useLoaderData();
 
@@ -24,6 +26,7 @@ export default function HomePage() {
     // Helper functions
     const updateEntries = (newEntries) => {setEntries(newEntries)};
     const toggleEntryForm = () => {entryFlag ? setEntryFlag(false) : setEntryFlag(true)};
+    const toggleInterviewFlag = () => {setIntervewFlag(!interviewFlag)}
 
     // The updated entries must be passed as a prop to the EntryForm.
     // The current entries are stored in the useState and passed to the ApplicationsList component.
@@ -50,14 +53,24 @@ export default function HomePage() {
                         <Stats applications={applications}/>
                         <div className="center">
                             <button onClick={toggleEntryForm}>Add Entry</button>
-                            <button onClick={()=> navigate('/interviews')}>Interviews</button>
+                            {
+                                interviewFlag?
+                                <button onClick={toggleInterviewFlag}>Applications</button>
+                                :
+                                <button onClick={toggleInterviewFlag}>Interviews</button>
+                            }
                         </div>
                         
                     </div>
                 }
             
             <div className="center padding">
-                <ApplicationsList  entries={entries} />
+                {
+                    interviewFlag?
+                    <InterviewsList/>
+                    :
+                    <ApplicationsList  entries={entries} />
+                }
             </div>
 
         </div>
