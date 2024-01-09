@@ -45,7 +45,7 @@ export default function EntryForm({onEntryAdded,toggleEntryFlag}) {
         };
 
     return (
-        <div id="entryForm">
+        <div className="entryForm">
             <h3 className="center padding">Add a new entry:</h3>
             <form onSubmit={handleAddEntry}>
                 <div className="center">

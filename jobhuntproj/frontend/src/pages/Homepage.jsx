@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { getApplications } from "../utilities";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import InterviewsList from "../components/InterviewsList";
+import InterviewForm from "../components/InterviewForm";
 
 export default function HomePage() {
     const [entries, setEntries] = useState([]);
@@ -25,7 +26,8 @@ export default function HomePage() {
 
     // Helper functions
     const updateEntries = (newEntries) => {setEntries(newEntries)};
-    const toggleEntryForm = () => {entryFlag ? setEntryFlag(false) : setEntryFlag(true)};
+    // const toggleEntryForm = () => {entryFlag ? setEntryFlag(false) : setEntryFlag(true)};
+    const toggleEntryForm = () => {setEntryFlag(!entryFlag)};
     const toggleInterviewFlag = () => {setIntervewFlag(!interviewFlag)}
 
     // The updated entries must be passed as a prop to the EntryForm.
@@ -43,7 +45,6 @@ export default function HomePage() {
                             <div className="center">
                                 <button onClick={toggleEntryForm}>Close</button>
                             </div>
-                            
                         </div>
                             
                     </div> 
@@ -67,7 +68,12 @@ export default function HomePage() {
             <div className="center padding">
                 {
                     interviewFlag?
-                    <InterviewsList/>
+                    
+                    <div>
+                        <InterviewForm/>
+                        <InterviewsList/>
+                    </div>
+                   
                     :
                     <ApplicationsList  entries={entries} />
                 }

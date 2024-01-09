@@ -48,14 +48,20 @@ def addEntry(request):
         return JsonResponse({"success":False})
     
 @api_view(['POST'])
-def createInterview(request, id):
-    job_id = id
+def createInterview(request):
+    company = request.data['company']
+    role = request.data['role']
+    recruiter = request.data['recruiter']
+    recruiter_email = request.data['recruiter_email']
     round = 1
     offer = False
     notes = "None"
     try:
         interview = Interviews.objects.create(
-            job_id = job_id,
+            company = company,
+            role =  role,
+            recruiter = recruiter,
+            recruiter_email = recruiter_email,
             round = round,
             offer = offer,
             notes = notes

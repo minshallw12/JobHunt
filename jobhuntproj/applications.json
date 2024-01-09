@@ -1,0 +1,3242 @@
+[
+{
+  "model": "jobhunt.jobs",
+  "pk": 1,
+  "fields": {
+    "company": "Valley County",
+    "role": "Systems Analyst",
+    "date_applied": "2023-05-30",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "pat duncan",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 2,
+  "fields": {
+    "company": "AuditBoard",
+    "role": "Software Engineer II",
+    "date_applied": "2023-05-30",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "Ben Chula…",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 3,
+  "fields": {
+    "company": "Ford",
+    "role": "Unknown",
+    "date_applied": "2023-06-07",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 4,
+  "fields": {
+    "company": "Aflac",
+    "role": "Unknown",
+    "date_applied": "2023-06-07",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 5,
+  "fields": {
+    "company": "Virtualitics",
+    "role": "Unknown",
+    "date_applied": "2023-06-07",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 6,
+  "fields": {
+    "company": "WorkBright",
+    "role": "Unknown",
+    "date_applied": "2023-06-07",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 7,
+  "fields": {
+    "company": "BECU",
+    "role": "Unknown",
+    "date_applied": "2023-06-06",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "Chris Aquaman",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 8,
+  "fields": {
+    "company": "TEKsystems",
+    "role": "Unknown",
+    "date_applied": "2023-06-09",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Mike White",
+    "recruiter_email": "michwhite@teksystems.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 9,
+  "fields": {
+    "company": "AuditBoard",
+    "role": "Marketing Data Analyst",
+    "date_applied": "2023-06-13",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "Taylor Carr",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 10,
+  "fields": {
+    "company": "Prometheum",
+    "role": "Unknown",
+    "date_applied": "2023-06-14",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "Emily Newton",
+    "recruiter_email": "ENewton@Prometheum.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 11,
+  "fields": {
+    "company": "Blastpoint",
+    "role": "Software Engineer - Back-End",
+    "date_applied": "2023-06-19",
+    "followed_up": 4,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "kesley.hall@blastpoint.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 12,
+  "fields": {
+    "company": "Weedmaps",
+    "role": "IT roles",
+    "date_applied": "2023-06-14",
+    "followed_up": 4,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "dgrazier@weedmaps.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 13,
+  "fields": {
+    "company": "SmartEtailing",
+    "role": "Unknown",
+    "date_applied": "2023-06-19",
+    "followed_up": 3,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 14,
+  "fields": {
+    "company": "Frontdoor",
+    "role": "Unknown",
+    "date_applied": "2023-06-20",
+    "followed_up": 2,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "Lauren Yackel / Katie Wolgamott",
+    "recruiter_email": "lauren.yackel@frontdoor.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 15,
+  "fields": {
+    "company": "Jobot",
+    "role": "Unknown",
+    "date_applied": "2023-06-20",
+    "followed_up": 2,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "Eric Williams",
+    "recruiter_email": "eric.williams@jobot.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 16,
+  "fields": {
+    "company": "SandboxAQ",
+    "role": "Unknown",
+    "date_applied": "2023-06-20",
+    "followed_up": 4,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 17,
+  "fields": {
+    "company": "Boeing",
+    "role": "Unknown",
+    "date_applied": "2023-06-21",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 18,
+  "fields": {
+    "company": "Guidehouse",
+    "role": "Unknown",
+    "date_applied": "2023-06-21",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 19,
+  "fields": {
+    "company": "Articulate",
+    "role": "Software Engineer II (React/Node)",
+    "date_applied": "2023-06-26",
+    "followed_up": 2,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "Josie Kammer, Tyrone Houston",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 20,
+  "fields": {
+    "company": "Mercury New Media",
+    "role": "Unknown",
+    "date_applied": "2023-06-26",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 21,
+  "fields": {
+    "company": "OpenPhone",
+    "role": "Unknown",
+    "date_applied": "2023-06-27",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 22,
+  "fields": {
+    "company": "Assembled",
+    "role": "UX Developer",
+    "date_applied": "2023-06-27",
+    "followed_up": 1,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "Nataliya Paul",
+    "recruiter_email": "nataliya.paul@assembled.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 23,
+  "fields": {
+    "company": "Lockheed Martin",
+    "role": "Data Analyst Asc",
+    "date_applied": "2023-06-29",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Paul Gallagher/ Ray Jokie",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 24,
+  "fields": {
+    "company": "Lockheed Martin",
+    "role": "Software Engineer",
+    "date_applied": "2023-07-05",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Paul Gallagher/ Ray Jokie",
+    "recruiter_email": "paul.e.gallagher@lmco.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 25,
+  "fields": {
+    "company": "Maris Consulting Group",
+    "role": "Front-End Engineer",
+    "date_applied": "2023-07-04",
+    "followed_up": 3,
+    "rejected": true,
+    "req_number": "BH-30240-1",
+    "recruiter": "Colin Reposa",
+    "recruiter_email": "creposa@mariscg.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 26,
+  "fields": {
+    "company": "Red River",
+    "role": "React Web Developer",
+    "date_applied": "2023-07-05",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 27,
+  "fields": {
+    "company": "MetroStar",
+    "role": "general app",
+    "date_applied": "2023-07-05",
+    "followed_up": 3,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Andrew Bice/Natalie Cookson",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 28,
+  "fields": {
+    "company": "Lockheed Martin",
+    "role": "Full Stack Engineer - Linux",
+    "date_applied": "2023-07-09",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Paul Gallagher/ Ray Jokie",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 29,
+  "fields": {
+    "company": "Zillow",
+    "role": "Full Stack Software Engineer",
+    "date_applied": "2023-07-09",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 30,
+  "fields": {
+    "company": "Ford",
+    "role": "React Developer",
+    "date_applied": "2023-07-10",
+    "followed_up": 2,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "Martin Hancock",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 31,
+  "fields": {
+    "company": "Jarvis Cole",
+    "role": "Backend React Developer",
+    "date_applied": "2023-07-10",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Jaimee DeLorge",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 32,
+  "fields": {
+    "company": "Booz Allen Hamilton",
+    "role": "Software Engineer Intern",
+    "date_applied": "2023-07-11",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "R0174119",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "Kaleb Varnes",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 33,
+  "fields": {
+    "company": "Booz Allen Hamilton",
+    "role": "Software Engineer",
+    "date_applied": "2023-07-11",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "R0173186",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "Kaleb Varnes",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 34,
+  "fields": {
+    "company": "Booz Allen Hamilton",
+    "role": "Software Engineer, Mid",
+    "date_applied": "2023-07-11",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "R0174705",
+    "recruiter": "Heather Holdaway",
+    "recruiter_email": "",
+    "referral": "Kaleb Varnes",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 35,
+  "fields": {
+    "company": "Pinterest",
+    "role": "Software Engineer, Fullstack",
+    "date_applied": "2023-07-11",
+    "followed_up": 1,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 36,
+  "fields": {
+    "company": "Kitestring",
+    "role": "React Developer",
+    "date_applied": "2023-07-12",
+    "followed_up": 1,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 37,
+  "fields": {
+    "company": "Blue Cross of Idaho",
+    "role": "Software Engineer I or II (Cloud/Digital)",
+    "date_applied": "2023-07-17",
+    "followed_up": 1,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "Debbie Hall",
+    "recruiter_email": "Debbie.Hall@bcidaho.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 38,
+  "fields": {
+    "company": "Spotify",
+    "role": "Fullstack Engineer, Backstage",
+    "date_applied": "2023-07-18",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Steph Oretri",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 39,
+  "fields": {
+    "company": "HouseCanary",
+    "role": "Backend Engineer",
+    "date_applied": "2023-07-19",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Yitao Rebecca Zhou",
+    "recruiter_email": "Jeff Somers",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 40,
+  "fields": {
+    "company": "Home Depot",
+    "role": "Software Engineer II (Remote)",
+    "date_applied": "2023-07-19",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "178557",
+    "recruiter": "Haley Weaver",
+    "recruiter_email": "Andrew Baker",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 41,
+  "fields": {
+    "company": "Getlabs",
+    "role": "Full Stack Engineer - Linux",
+    "date_applied": "2023-07-20",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Amie something",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 42,
+  "fields": {
+    "company": "StellentIT",
+    "role": "Web Software Engineer",
+    "date_applied": "2023-07-21",
+    "followed_up": 2,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Dolly Sharma",
+    "recruiter_email": "Dolly@stellentit.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 43,
+  "fields": {
+    "company": "Bitsight",
+    "role": "Software Engineer",
+    "date_applied": "2023-07-21",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "JR100582",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 44,
+  "fields": {
+    "company": "Booz Allen Hamilton",
+    "role": "Software Engineer, Mid",
+    "date_applied": "2023-07-24",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "R0175624",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "Kaleb Varnes",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 45,
+  "fields": {
+    "company": "Agile5",
+    "role": "Junio Software Developer",
+    "date_applied": "2023-07-25",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 46,
+  "fields": {
+    "company": "Splunk",
+    "role": "Software Engineer II, Frontend, Data UI (Remote)",
+    "date_applied": "2023-07-25",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Jefferey Broussard",
+    "recruiter_email": "jbroussard@splunk.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 47,
+  "fields": {
+    "company": "Whitespace",
+    "role": "Associate Software Developer",
+    "date_applied": "2023-07-25",
+    "followed_up": 1,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "Anders Ramsay",
+    "recruiter_email": "linkedin",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 48,
+  "fields": {
+    "company": "Applied Systems Inc",
+    "role": "Full Stack Developer (React.js)",
+    "date_applied": "2023-07-31",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 49,
+  "fields": {
+    "company": "Leverege",
+    "role": "React/React Native Developer",
+    "date_applied": "2023-07-31",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Eric Conn",
+    "recruiter_email": "eric.conn@leverege.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 50,
+  "fields": {
+    "company": "Mutual of Omaha",
+    "role": "Full Stack Engineer (Java/React)",
+    "date_applied": "2023-07-31",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "502432",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 51,
+  "fields": {
+    "company": "CashApp/Block",
+    "role": "React Native Engineer",
+    "date_applied": "2023-08-01",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Rawa AlHoyt",
+    "recruiter_email": "rawa@tarzaban.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 52,
+  "fields": {
+    "company": "Booz Allen Hamilton",
+    "role": "Software Engineer, Mid",
+    "date_applied": "2023-08-01",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "R0174078",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 53,
+  "fields": {
+    "company": "Maris Consulting Group",
+    "role": "Front-End Developer",
+    "date_applied": "2023-08-01",
+    "followed_up": 1,
+    "rejected": true,
+    "req_number": "BH-30240-3",
+    "recruiter": "Ray Brewer",
+    "recruiter_email": "rbrewer@mariscg.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 54,
+  "fields": {
+    "company": "WebPunch",
+    "role": "Advanced Junior Ruby Developer",
+    "date_applied": "2023-08-02",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Ginger Jones",
+    "recruiter_email": "ginger@webpunch.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 55,
+  "fields": {
+    "company": "Subscript",
+    "role": "Full Stack Software Engineer",
+    "date_applied": "2023-08-02",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Sidharth Kakkar",
+    "recruiter_email": "sidharth@subscript.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 56,
+  "fields": {
+    "company": "Lockheed Martin",
+    "role": "Software Engineer Intern",
+    "date_applied": "2023-08-02",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "647461BR",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 57,
+  "fields": {
+    "company": "Coinbase",
+    "role": "Data Analyst",
+    "date_applied": "2023-08-03",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 58,
+  "fields": {
+    "company": "Lyra Health",
+    "role": "Front-End Engineer",
+    "date_applied": "2023-08-04",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Tiffany Mai",
+    "recruiter_email": "tmai@lyrahealth.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 59,
+  "fields": {
+    "company": "ReMatter",
+    "role": "Full Stack Engineer",
+    "date_applied": "2023-08-04",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Wyatt Pontius",
+    "recruiter_email": "wyatt@rematter.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 60,
+  "fields": {
+    "company": "CashApp/Block",
+    "role": "Frontend Engineer - Web Marketing Platform",
+    "date_applied": "2023-08-08",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Rawa AlHoyt",
+    "recruiter_email": "rawa@tarzaban.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 61,
+  "fields": {
+    "company": "Booz Allen Hamilton",
+    "role": "Software Developer",
+    "date_applied": "2023-08-08",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "R0157091",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 62,
+  "fields": {
+    "company": "Patterned Learning AI",
+    "role": "Full Stack Web Developer (Entry Level)",
+    "date_applied": "2023-08-14",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 63,
+  "fields": {
+    "company": "Thoughtful",
+    "role": "Junior Full Stack Engineer",
+    "date_applied": "2023-08-14",
+    "followed_up": 1,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "Alex Zekoff",
+    "recruiter_email": "alex@thoughtful.ai",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 64,
+  "fields": {
+    "company": "SoBet",
+    "role": "Junior Developer",
+    "date_applied": "2023-08-14",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Cooper Lycan",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 65,
+  "fields": {
+    "company": "CitizenGO",
+    "role": "Software Engineer",
+    "date_applied": "2023-08-14",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 66,
+  "fields": {
+    "company": "Frontdoor",
+    "role": "Software Engineer (Remote)",
+    "date_applied": "2023-08-15",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Katie Wolgamott",
+    "recruiter_email": "katie.wolgamott@frontdoor.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 67,
+  "fields": {
+    "company": "SharkNinja",
+    "role": "Software Engineer",
+    "date_applied": "2023-08-15",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Ricardo Valentin",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 68,
+  "fields": {
+    "company": "Infogrid",
+    "role": "Software Engineer",
+    "date_applied": "2023-08-15",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Brandon Burton",
+    "recruiter_email": "brandon.burton@infogrid.io",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 69,
+  "fields": {
+    "company": "Booz Allen Hamilton",
+    "role": "Software Developer",
+    "date_applied": "2023-08-22",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "R0177473",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 70,
+  "fields": {
+    "company": "Maris Consulting Group",
+    "role": "Unknown",
+    "date_applied": "2023-08-22",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 71,
+  "fields": {
+    "company": "Schweitzer Engineering Labratories",
+    "role": "Software Engineer Intern",
+    "date_applied": "2023-08-18",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Rachel Brown",
+    "recruiter_email": "rachel_brown@selinc.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 72,
+  "fields": {
+    "company": "Travelers",
+    "role": "Software Engineer I, AWS/Guideware Cloud Integration",
+    "date_applied": "2023-08-18",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "R-28676",
+    "recruiter": "Heidi Thom",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 73,
+  "fields": {
+    "company": "Knowledge Services",
+    "role": "Unknown",
+    "date_applied": "2023-08-18",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Michaela Muench",
+    "recruiter_email": "michaelam@knowledgeservices.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 74,
+  "fields": {
+    "company": "Oasis Systems",
+    "role": "Unknown",
+    "date_applied": "2023-08-18",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Tyler Hoskins",
+    "recruiter_email": "tyler.hoskins@oasiste.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 75,
+  "fields": {
+    "company": "Home Depot",
+    "role": "Software Engineer (Remote)",
+    "date_applied": "2023-08-18",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "179122",
+    "recruiter": "Josh Marquette",
+    "recruiter_email": "veteran_recruiting@homedepot.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 76,
+  "fields": {
+    "company": "Zillow",
+    "role": "Software Development Engineer",
+    "date_applied": "2023-08-18",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "P742047",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 77,
+  "fields": {
+    "company": "Funnel",
+    "role": "Software Engineer L1",
+    "date_applied": "2023-08-22",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 78,
+  "fields": {
+    "company": "Lockheed Martin",
+    "role": "Full Stack Engineer (Level 2)",
+    "date_applied": "2023-08-22",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 79,
+  "fields": {
+    "company": "QuickTrials",
+    "role": "Full Stack Developer",
+    "date_applied": "2023-08-22",
+    "followed_up": 2,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Milana",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 80,
+  "fields": {
+    "company": "CryptoRecruit",
+    "role": "Fullstack React Engineer (Ethereum Virtual Machine)",
+    "date_applied": "2023-08-28",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 81,
+  "fields": {
+    "company": "Fiserv",
+    "role": "Associate Program",
+    "date_applied": "2023-08-28",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 82,
+  "fields": {
+    "company": "Booz Allen Hamilton",
+    "role": "Software Engineer, Mid",
+    "date_applied": "2023-08-28",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "R0174705",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 83,
+  "fields": {
+    "company": "Oracle",
+    "role": "Software Engineer 2",
+    "date_applied": "2023-08-28",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 84,
+  "fields": {
+    "company": "Florida Blue / Blue Cross",
+    "role": "Junior IT React/Node JS Developer",
+    "date_applied": "2023-08-29",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 85,
+  "fields": {
+    "company": "Origami Risk",
+    "role": "Associate Full Stack Engineer",
+    "date_applied": "2023-08-29",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 86,
+  "fields": {
+    "company": "Vynyl",
+    "role": "Python/Serverless Software Developer",
+    "date_applied": "2023-08-29",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 87,
+  "fields": {
+    "company": "Lockheed Martin",
+    "role": "Software Engineer Associate",
+    "date_applied": "2023-08-29",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "650479BR",
+    "recruiter": "Jacey Cobb",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 88,
+  "fields": {
+    "company": "Lockheed Martin",
+    "role": "Software Engineer Associate",
+    "date_applied": "2023-08-29",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "650480BR",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 89,
+  "fields": {
+    "company": "InTimeTec",
+    "role": "Software Engineer",
+    "date_applied": "2023-08-31",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "Neil Whited",
+    "recruiter_email": "neil.whited@intimetec.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 90,
+  "fields": {
+    "company": "Transcend",
+    "role": "Full Stack Software Engineer",
+    "date_applied": "2023-08-31",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 91,
+  "fields": {
+    "company": "Maxar",
+    "role": "Back-End Software Developer",
+    "date_applied": "2023-09-01",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "R18966",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "Andrew Regan",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 92,
+  "fields": {
+    "company": "Maxar",
+    "role": "Sr Cash Manager",
+    "date_applied": "2023-09-04",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "R19009",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "Andrew Regan",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 93,
+  "fields": {
+    "company": "Piper Companies",
+    "role": "Node.js Developer I",
+    "date_applied": "2023-09-04",
+    "followed_up": 2,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Catie Fell",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 94,
+  "fields": {
+    "company": "Reverb",
+    "role": "Backend Engineer",
+    "date_applied": "2023-09-05",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 95,
+  "fields": {
+    "company": "Beyond 12",
+    "role": "Data Insight Analyst",
+    "date_applied": "2023-09-05",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 96,
+  "fields": {
+    "company": "Flowy",
+    "role": "Junior Full Stack Consultant",
+    "date_applied": "2023-09-05",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 97,
+  "fields": {
+    "company": "Simplot",
+    "role": "Full Stack Software Engineer",
+    "date_applied": "2023-09-13",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 98,
+  "fields": {
+    "company": "Booz Allen Hamilton",
+    "role": "Software Developer",
+    "date_applied": "2023-09-13",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "R0178940",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "Kaleb Varnes",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 99,
+  "fields": {
+    "company": "Booz Allen Hamilton",
+    "role": "Software Developer",
+    "date_applied": "2023-09-13",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "R0178464",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "Kaleb Varnes",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 100,
+  "fields": {
+    "company": "The Browser Company",
+    "role": "Software Engineer",
+    "date_applied": "2023-09-13",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 101,
+  "fields": {
+    "company": "InMarket",
+    "role": "Full Stack Software Engineer",
+    "date_applied": "2023-09-14",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 102,
+  "fields": {
+    "company": "Intetics",
+    "role": "React Developer",
+    "date_applied": "2023-09-14",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 103,
+  "fields": {
+    "company": "Avaya",
+    "role": "Demo Developer",
+    "date_applied": "2023-09-14",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 104,
+  "fields": {
+    "company": "Ramp",
+    "role": "Software Engineer | Frontend",
+    "date_applied": "2023-09-18",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 105,
+  "fields": {
+    "company": "Sweitzer Engineering Labratoriea",
+    "role": "Associate Software Engineer",
+    "date_applied": "2023-09-18",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Veronica Ready",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 106,
+  "fields": {
+    "company": "Kraken",
+    "role": "Software Engineer I - React - Web",
+    "date_applied": "2023-09-19",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 107,
+  "fields": {
+    "company": "FDM",
+    "role": "Junior Software Development Consultant",
+    "date_applied": "2023-09-19",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 108,
+  "fields": {
+    "company": "JP Morgan Chase",
+    "role": "Software Engineer Program",
+    "date_applied": "2023-09-19",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 109,
+  "fields": {
+    "company": "Clari",
+    "role": "Fullstack Software Engineer II",
+    "date_applied": "2023-09-19",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 110,
+  "fields": {
+    "company": "Xtivia",
+    "role": "Jr UI / React Developer",
+    "date_applied": "2023-09-19",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Karen Crowell",
+    "recruiter_email": "kcrowell@xtivia.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 111,
+  "fields": {
+    "company": "Wells Fargo",
+    "role": "2024 Technology Early Career Development Program",
+    "date_applied": "2023-09-21",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "R-298781",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 112,
+  "fields": {
+    "company": "UPMC",
+    "role": "Software Engineer Associate (.NET / C#)",
+    "date_applied": "2023-09-25",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "5023471688",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 113,
+  "fields": {
+    "company": "Fidelity",
+    "role": "LEAP: Full Stack Engineer",
+    "date_applied": "2023-09-25",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "2081544",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 114,
+  "fields": {
+    "company": "Maxar",
+    "role": "Software Engineer (Python/AWS)",
+    "date_applied": "2023-09-25",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "R19095",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 115,
+  "fields": {
+    "company": "Microsoft",
+    "role": "Software Engineer: Microsoft LEAP Opportunities",
+    "date_applied": "2023-09-25",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "1627609",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 116,
+  "fields": {
+    "company": "Capital One",
+    "role": "Capital One Developer Academy Associate - 2024",
+    "date_applied": "2023-10-02",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "R169881",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 117,
+  "fields": {
+    "company": "Elevar",
+    "role": "Full Stack Engineer",
+    "date_applied": "2023-10-03",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "Brad Redding",
+    "recruiter_email": "brad@getelevar.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 118,
+  "fields": {
+    "company": "CashApp/Block",
+    "role": "Software Engineer - Identity Experiences, Health",
+    "date_applied": "2023-10-04",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "",
+    "recruiter_email": "",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 119,
+  "fields": {
+    "company": "Multi Media LLC",
+    "role": "Software Engineer",
+    "date_applied": "2023-10-04",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "",
+    "recruiter": "John LeBlanc / Hans Baker",
+    "recruiter_email": "john@multimediallc.com / hans@multimediallc.com",
+    "referral": "",
+    "referral_email": "",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 121,
+  "fields": {
+    "company": "Gunnison Consulting",
+    "role": "Junior Software Developer",
+    "date_applied": "2023-10-10",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 122,
+  "fields": {
+    "company": "IT Concepts",
+    "role": "Jr. Application Developer (IRS)",
+    "date_applied": "2023-10-10",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 123,
+  "fields": {
+    "company": "Continu",
+    "role": "Junior Software Engineer",
+    "date_applied": "2023-10-10",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": "Scott Burgess CEO",
+    "recruiter_email": "scott@continu.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 125,
+  "fields": {
+    "company": "Legacy Research Group",
+    "role": "Junior Full Stack Developer",
+    "date_applied": "2023-10-12",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "2023-1979",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 126,
+  "fields": {
+    "company": "ConstructConnect",
+    "role": "Software Engineer I",
+    "date_applied": "2023-10-12",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "2023-1119",
+    "recruiter": "Julie Bick",
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 127,
+  "fields": {
+    "company": "UL Solutions",
+    "role": "Associate Software Engineer",
+    "date_applied": "2023-10-12",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "242",
+    "recruiter": "Taylor Torrence",
+    "recruiter_email": "taylor.torrence@ul.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 128,
+  "fields": {
+    "company": "Prelim",
+    "role": "Software Engineer",
+    "date_applied": "2023-10-17",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": "Chris Blaser / Heang Chan",
+    "recruiter_email": "chris@prelim.com / heang@prelim.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 129,
+  "fields": {
+    "company": "BECU",
+    "role": "Database Engineer",
+    "date_applied": "2023-10-17",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "R-09407",
+    "recruiter": "Chris \"Aquaman\" Carver",
+    "recruiter_email": "\tchris.carver@becu.org",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 130,
+  "fields": {
+    "company": "Amazon",
+    "role": "Jr. Software Development Engineer",
+    "date_applied": "2023-10-17",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "2439287",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 131,
+  "fields": {
+    "company": "Oracle",
+    "role": "OVIP Software Engineer Intern",
+    "date_applied": "2023-10-24",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "215988",
+    "recruiter": "Gerry Borja (boss) / Susan Christ",
+    "recruiter_email": "diversity_us@oracle.com",
+    "referral": "Yiran Fitzpatrick",
+    "referral_email": "Slack",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 132,
+  "fields": {
+    "company": "Perficient",
+    "role": "React Full Stack Developer",
+    "date_applied": "2023-10-24",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "2023000962",
+    "recruiter": "Bruce Velianoff",
+    "recruiter_email": "brucec.velianoff@perficient.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 133,
+  "fields": {
+    "company": "JW Player",
+    "role": "Software Engineer - Frontend, Growth Engineering Team",
+    "date_applied": "2023-10-24",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 134,
+  "fields": {
+    "company": "Guidehouse",
+    "role": "Web Application Developer",
+    "date_applied": "2023-10-24",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "12424",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 135,
+  "fields": {
+    "company": "Kodiak Robotics",
+    "role": "Winter 2024 Intern, Motion Planning and Decision Making",
+    "date_applied": "2023-10-26",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": "Van Nguyen",
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 136,
+  "fields": {
+    "company": "Legacy Research Group",
+    "role": "Junior Front End Developer",
+    "date_applied": "2023-11-01",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "2023-1980",
+    "recruiter": "Gabe Diaz / Jon Alberghini",
+    "recruiter_email": "gdiaz@legacyresearch.com / jalberghini@legacyresearch.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 137,
+  "fields": {
+    "company": "Development Seed",
+    "role": "Frontend Engineer",
+    "date_applied": "2023-11-02",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 138,
+  "fields": {
+    "company": "Applied Systems",
+    "role": "Associate Developer",
+    "date_applied": "2023-11-02",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "2023-5442",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 139,
+  "fields": {
+    "company": "Enlyte",
+    "role": "Entry Level Full Stack Developer Remote",
+    "date_applied": "2023-11-02",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "23-16157",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 140,
+  "fields": {
+    "company": "Enlyte",
+    "role": "Junior Full Stack Developer Remote",
+    "date_applied": "2023-11-02",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "23-16156",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 141,
+  "fields": {
+    "company": "Adobe",
+    "role": "Technology Consultant",
+    "date_applied": "2023-11-02",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "R140727",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 143,
+  "fields": {
+    "company": "Tempo.io",
+    "role": "Fullstack Developer",
+    "date_applied": "2023-11-22",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 144,
+  "fields": {
+    "company": "Topia Interactive",
+    "role": "Frontend Software Engineer",
+    "date_applied": "2023-11-22",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 145,
+  "fields": {
+    "company": "Blissbook",
+    "role": "Junior React Developer (Remote)",
+    "date_applied": "2023-11-22",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 146,
+  "fields": {
+    "company": "Secoda Technologies",
+    "role": "Software Engineer, Full Stack",
+    "date_applied": "2023-11-27",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 147,
+  "fields": {
+    "company": "COMPASS Pathways",
+    "role": "Full Stack Engineer",
+    "date_applied": "2023-11-27",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 148,
+  "fields": {
+    "company": "Perficient",
+    "role": "React Developer",
+    "date_applied": "2023-11-28",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "2023001086",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 149,
+  "fields": {
+    "company": "Praxis Labs",
+    "role": "Junior Fullstack Engineer",
+    "date_applied": "2023-12-06",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 152,
+  "fields": {
+    "company": "Home Depot",
+    "role": "Software Engineer (Remote)",
+    "date_applied": "2023-12-13",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "106359",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://homedepot.wd5.myworkdayjobs.com/en-US/CareerDepot/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 153,
+  "fields": {
+    "company": "Okta",
+    "role": "Software Engineer Intern, Summer 2024",
+    "date_applied": "2023-12-13",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": "Tiffani Mitchell / Maria Mencias",
+    "recruiter_email": "tm@okta.com / maria.mencias@okta.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 154,
+  "fields": {
+    "company": "Mercury Development",
+    "role": "React Developer",
+    "date_applied": "2023-12-14",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 155,
+  "fields": {
+    "company": "Adobe",
+    "role": "2024 Intern - Software Engineer",
+    "date_applied": "2023-12-14",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "R139304",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": "Dean Drummond",
+    "referral_email": "deand@adobe.com",
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 156,
+  "fields": {
+    "company": "Lockheed Martin",
+    "role": "UI/UX Software Developer",
+    "date_applied": "2023-12-14",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "658269BR",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 157,
+  "fields": {
+    "company": "Micron",
+    "role": "Software Engineer",
+    "date_applied": "2023-12-14",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "JR42884",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 158,
+  "fields": {
+    "company": "FedEx",
+    "role": "Software Engineer - Front End - All Levels",
+    "date_applied": "2023-12-20",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "RC688890",
+    "recruiter": "Mark Young",
+    "recruiter_email": "mark.young@fedex.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://fedex.wd1.myworkdayjobs.com/en-US/FDW_External_Career_Site/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 159,
+  "fields": {
+    "company": "Raytheon",
+    "role": "Full Stack Software Engineer I (remote)",
+    "date_applied": "2023-12-20",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "01666881",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://globalhr.wd5.myworkdayjobs.com/en-US/REC_RTX_Ext_Gateway/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 160,
+  "fields": {
+    "company": "Guidehouse",
+    "role": "Software Engineer",
+    "date_applied": "2023-12-20",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "15403",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://guidehouse.wd1.myworkdayjobs.com/en-US/External/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 166,
+  "fields": {
+    "company": "Newfold Digital",
+    "role": "Junior Software Engineer",
+    "date_applied": "2023-12-20",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "R7775",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://web.wd1.myworkdayjobs.com/en-US/ExternalCareerSite/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 167,
+  "fields": {
+    "company": "Micron",
+    "role": "IT Software Engineer",
+    "date_applied": "2023-12-20",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "JR43041",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://micron.wd1.myworkdayjobs.com/en-US/External/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 168,
+  "fields": {
+    "company": "Home Depot",
+    "role": "Software Engineer 2 (Remote)",
+    "date_applied": "2023-12-21",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "Req106126",
+    "recruiter": null,
+    "recruiter_email": "veteran_recruiting@homedepot.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://homedepot.wd5.myworkdayjobs.com/en-US/CareerDepot/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 169,
+  "fields": {
+    "company": "Home Depot",
+    "role": "Software Engineer II (Remote)",
+    "date_applied": "2023-12-21",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "Req105818",
+    "recruiter": null,
+    "recruiter_email": "veteran_recruiting@homedepot.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://homedepot.wd5.myworkdayjobs.com/en-US/CareerDepot/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 170,
+  "fields": {
+    "company": "Home Depot",
+    "role": "Software Engineer (Remote)",
+    "date_applied": "2023-12-21",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "Req106341",
+    "recruiter": null,
+    "recruiter_email": "veteran_recruiting@homedepot.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://homedepot.wd5.myworkdayjobs.com/en-US/CareerDepot/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 171,
+  "fields": {
+    "company": "Home Depot",
+    "role": "SOFTWARE ENGINEER",
+    "date_applied": "2023-12-21",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "Req106396",
+    "recruiter": null,
+    "recruiter_email": "veteran_recruiting@homedepot.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://homedepot.wd5.myworkdayjobs.com/en-US/CareerDepot/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 172,
+  "fields": {
+    "company": "Home Depot",
+    "role": "Software Engineer (Remote)",
+    "date_applied": "2023-12-21",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "Req106127",
+    "recruiter": null,
+    "recruiter_email": "veteran_recruiting@homedepot.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://homedepot.wd5.myworkdayjobs.com/en-US/CareerDepot/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 173,
+  "fields": {
+    "company": "Home Depot",
+    "role": "SOFTWARE ENGINEER",
+    "date_applied": "2023-12-21",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "Req105262",
+    "recruiter": null,
+    "recruiter_email": "veteran_recruiting@homedepot.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://homedepot.wd5.myworkdayjobs.com/en-US/CareerDepot/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 174,
+  "fields": {
+    "company": "Home Depot",
+    "role": "Software Engineer",
+    "date_applied": "2023-12-21",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": "Req104945",
+    "recruiter": null,
+    "recruiter_email": "veteran_recruiting@homedepot.com",
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://homedepot.wd5.myworkdayjobs.com/en-US/CareerDepot/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 175,
+  "fields": {
+    "company": "Maxar",
+    "role": "Associate Software Engineer",
+    "date_applied": "2023-12-21",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "R19683",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": "Andrew Regan",
+    "referral_email": "andrew.regan@maxar.com",
+    "portal_url": "https://maxar.wd1.myworkdayjobs.com/en-US/Maxar/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 176,
+  "fields": {
+    "company": "Keeper Security",
+    "role": "Frontend Engineer (ReactJS) Jr",
+    "date_applied": "2023-12-22",
+    "followed_up": 1,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": null,
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 178,
+  "fields": {
+    "company": "Heggerty",
+    "role": "Full Stack Engineer",
+    "date_applied": "2023-12-28",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://heggerty-careers.rippling-ats.com/",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 179,
+  "fields": {
+    "company": "JR Simplot",
+    "role": "Full Stack Software Engineer",
+    "date_applied": "2023-12-28",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "15022",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://career4.successfactors.com/portalcareer?_s.crb=IjXvutsXZ7EuvT6wOZ5B8T6j9kA1bUtWhmqvFerklag%253d",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 180,
+  "fields": {
+    "company": "Dispel",
+    "role": "Associate Full Stack Engineer",
+    "date_applied": "2024-01-03",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://apply.workable.com/dispel/j/BA0BFE59EE/apply/?success",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 181,
+  "fields": {
+    "company": "Borderless",
+    "role": "Jr. Software Engineer",
+    "date_applied": "2024-01-03",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://apply.workable.com/borderless/j/4EB566200C/apply/?success",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 182,
+  "fields": {
+    "company": "1Password",
+    "role": "Full Stack Developer",
+    "date_applied": "2024-01-04",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://jobs.lever.co/1password/35eb2504-d73a-494d-8510-fce6028a8c06/thanks",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 183,
+  "fields": {
+    "company": "ServiceTitan (Aspire)",
+    "role": "Software Engineer I (Aspire)",
+    "date_applied": "2024-01-05",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": "JR107273",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://servicetitan.wd1.myworkdayjobs.com/en-US/ServiceTitan/userHome",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 184,
+  "fields": {
+    "company": "USA Jobs",
+    "role": "IT Specialist (INFOSEC)",
+    "date_applied": "2024-01-04",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://www.usajobs.gov/Applicant/Profile/Dashboard/",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 185,
+  "fields": {
+    "company": "CompTIA",
+    "role": "Specialist, Web Development",
+    "date_applied": "2024-01-05",
+    "followed_up": 0,
+    "rejected": true,
+    "req_number": "Req #363",
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://us232.dayforcehcm.com/CandidatePortal/u/cp/en-US/comptia",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 186,
+  "fields": {
+    "company": "Pillar4",
+    "role": "Junior Front End Developer",
+    "date_applied": "2024-01-08",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://pillar4media.breezy.hr/p/3f24c0a1ae31-junior-front-end-engineer?source=linkedin",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 187,
+  "fields": {
+    "company": "Latitude, Inc",
+    "role": "OpenShift Engineer",
+    "date_applied": "2024-01-08",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": "Megan Knight",
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://latitudeinc.applytojob.com/apply/confirm/6H1m8aa1sk",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 188,
+  "fields": {
+    "company": "HeadLight",
+    "role": "Software Engineer",
+    "date_applied": "2024-01-08",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://apply.workable.com/headlight-technologies-inc/j/7B57AD52F1/",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 189,
+  "fields": {
+    "company": "BlastPoint",
+    "role": "Software Engineer, Front-End",
+    "date_applied": "2024-01-08",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://boards.greenhouse.io/blastpoint/jobs/4150017007",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 190,
+  "fields": {
+    "company": "Macedon Consulting",
+    "role": "Software Developer Consultant",
+    "date_applied": "2024-01-08",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/2155453",
+    "user": null
+  }
+},
+{
+  "model": "jobhunt.jobs",
+  "pk": 191,
+  "fields": {
+    "company": "Insurity",
+    "role": "Developer",
+    "date_applied": "2024-01-08",
+    "followed_up": 0,
+    "rejected": false,
+    "req_number": null,
+    "recruiter": null,
+    "recruiter_email": null,
+    "referral": null,
+    "referral_email": null,
+    "portal_url": "https://jobs.jobvite.com/insurity/job/oYM7pfw0",
+    "user": null
+  }
+}
+]

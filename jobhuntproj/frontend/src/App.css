@@ -2,11 +2,11 @@
     margin: 0px;
 }
 
-.entryForm {
+/* .entryForm {
     display: flex;
     flex-direction: column;
     width: 300px;
-}
+} */
 .jobDetail {
     display: flex;
     flex-direction: column;
@@ -145,7 +145,7 @@ button {
     border-radius: 5px;
 }
 
-#entryForm {
+.entryForm {
     margin: 10px;
     padding: 10px;
     border: 1px solid black;

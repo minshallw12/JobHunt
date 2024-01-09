@@ -29,10 +29,13 @@ class Jobs (models.Model):
         return f"{self.company} | {self.role} | Dunder"
 
 class Interviews (models.Model):
-    job_id = models.IntegerField(null=True)
+    company = models.CharField(blank=False, null=False, default='unknown', max_length=254)
+    role = models.CharField(blank=True, null=False, default='Unknown', max_length=254)
+    recruiter = models.CharField(max_length=254, blank=True, null=True)
+    recruiter_email = models.EmailField(max_length=254, blank=True, null=True)
     round = models.IntegerField(default=1)
     offer = models.BooleanField(default=False)
     notes = models.TextField(null=True, blank=True)
 
     def __str__(self) -> str:
-        return f"{self.job} | Dunder"
+        return f"{self.role} | {self.company} | Dunder"

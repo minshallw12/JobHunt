@@ -17,7 +17,6 @@ export default function ListItem({ id, company, role, date_applied, followed_up,
                 <td className="red">{company}</td>:
                 <td>{company}</td>
             }
-            <td>{company}</td>
             <td>{role}</td>
             <td>{date_applied}</td>
             <td>{followed_up}

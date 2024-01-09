@@ -53,6 +53,27 @@ export const addEntry = async (
       return false; // Entry addition failed
     }
   };
+
+
+export const addInterview = async (
+  company,
+  role,
+  recruiter,
+  recruiter_email
+) => {
+  const response = await axios.post('/addinterview/', {
+    company,
+    role,
+    recruiter,
+    recruiter_email
+  });
+
+  if (response.data.success) {
+    return true;
+  } else {
+    throw new Error("Entry was not added.")
+  }
+}
   
 
 // Read

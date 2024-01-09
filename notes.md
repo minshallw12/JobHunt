@@ -1,5 +1,7 @@
 ** Remember to remove static folder from .gitignore before deploying project
 
+- Postgres is dumping data to the project folder instead of the fixtures inside app folder
+
 
 # Bugs
 
