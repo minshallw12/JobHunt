@@ -1,24 +1,20 @@
 import { useLoaderData } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { followUp, followUpFromList } from "../utilities";
+import { useState} from "react";
+import { followUpFromList } from "../utilities";
 import ListItem from "./ListItem";
 
 // We are passing the current list of entries as a prop from the HomePage page.
-export default function ApplicationsList({ entries }) {
+export default function ApplicationsList() {
     const initialData = useLoaderData()
     const [data, setData] = useState(initialData);
-    const [followedUp, setFollowedUp] = useState(data.followed_up)
 
-    useEffect(()=> {
-        setFollowedUp(data.followed_up);
-    }, [data.followed_up])
-
-    const handleIncrement = async(id, direction) => {
-        console.log(id)
-        const updatedFollowedUp = direction === 'increment' ? followedUp + 1 : followedUp - 1;
-        const updatedData = await followUpFromList(id, direction, updatedFollowedUp);
-        if (updatedData) {
-            setFollowedUp(updatedData)
+    // helper function to increment follow up stats
+    const handleIncrement = async (id, direction) => {
+        try {
+            const updatedData = await followUpFromList(id, direction); // this is a list
+            setData(updatedData); // just replace state with fresh list from backend
+        } catch (err) {
+            console.error("Failed to update follow-up", err);
         }
     };
 
@@ -37,8 +33,19 @@ export default function ApplicationsList({ entries }) {
                     <th>App Portal</th>
                 </tr>
                
-                {entries.map(({ id, company, role, date_applied, followed_up, req_number, rejected, portal_url }) => (
-                    <ListItem id={id} company={company} role={role} date_applied={date_applied} followed_up={followed_up} rejected={rejected} req_number={req_number} portal_url={portal_url}/>
+                {data.map(({ id, company, role, date_applied, followed_up, req_number, rejected, portal_url }) => (
+                    <ListItem 
+                        key={id}
+                        id={id} 
+                        company={company} 
+                        role={role} 
+                        date_applied={date_applied} 
+                        followed_up={followed_up} 
+                        rejected={rejected} 
+                        req_number={req_number} 
+                        portal_url={portal_url}
+                        handleIncrement={handleIncrement}
+                    />
                 ))}
             </table>
         </div>
