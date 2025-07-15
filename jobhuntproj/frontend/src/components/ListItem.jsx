@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function ListItem({ id, company, role, date_applied, followed_up, rejected, req_number, portal_url, handleIncrement }) {
-    console.log('Rendering ListItem:', id, followed_up)
+    
     return (
         <tr>
             <td>

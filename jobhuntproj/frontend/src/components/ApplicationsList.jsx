@@ -8,6 +8,8 @@ export default function ApplicationsList() {
     const initialData = useLoaderData()
     const [data, setData] = useState(initialData);
 
+    const sortedData = [...data].sort((a, b) => b.id - a.id);
+
     // helper function to increment follow up stats
     const handleIncrement = async (id, direction) => {
         try {
@@ -33,7 +35,7 @@ export default function ApplicationsList() {
                     <th>App Portal</th>
                 </tr>
                
-                {data.map(({ id, company, role, date_applied, followed_up, req_number, rejected, portal_url }) => (
+                {sortedData.map(({ id, company, role, date_applied, followed_up, req_number, rejected, portal_url }) => (
                     <ListItem 
                         key={id}
                         id={id} 
