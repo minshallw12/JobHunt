@@ -1,5 +1,21 @@
 import { useMemo } from "react";
 
+function parseLocalDate(dateString) {
+  if (typeof dateString !== "string") return null;
+
+  // Input from <input type="date"> is usually YYYY-MM-DD.
+  const parts = dateString.split("-");
+  if (parts.length === 3) {
+    const [year, month, day] = parts.map(Number);
+    if (!Number.isNaN(year) && !Number.isNaN(month) && !Number.isNaN(day)) {
+      return new Date(year, month - 1, day);
+    }
+  }
+
+  const parsed = new Date(dateString);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
 export default function Stats({ applications }) {
   // Cache today's date once per render
   const todaysDate = useMemo(() => new Date(), []);
@@ -19,10 +35,13 @@ export default function Stats({ applications }) {
   // Count applications applied since last Sunday
   const weeklyAppsCount = useMemo(() => {
     return applications.reduce((count, app) => {
-      const appDate = new Date(app.date_applied);
-      return appDate >= lastSunday ? count + 1 : count;
+      const appDate = parseLocalDate(app.date_applied);
+      if (!appDate) return count;
+
+      appDate.setHours(0, 0, 0, 0);
+      return appDate >= lastSunday && appDate <= todaysDate ? count + 1 : count;
     }, 0);
-  }, [applications, lastSunday]);
+  }, [applications, lastSunday, todaysDate]);
 
   return (
     <div className="column">

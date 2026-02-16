@@ -112,6 +112,45 @@ button {
     align-items: center;
 }
 
+#topHeader {
+    width: 90%;
+    margin-top: 18px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#headerTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+#headerNav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+#headerNav a {
+    color: white;
+    text-decoration: none;
+}
+
+#headerNav a:hover {
+    text-decoration: underline;
+}
+
+#headerNav a.active {
+    text-decoration: underline;
+}
+
+.navSeparator {
+    opacity: 0.8;
+}
+
 
 
 #container {

@@ -21,8 +21,6 @@ export default function HomePage() {
 
     return (
         <div>
-            <h1 className="center padding">Job Tracker</h1>
-            
                 {
                     entryFlag 
                     ?
