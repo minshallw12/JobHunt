@@ -87,6 +87,12 @@ button {
     align-items: center;
     flex-direction: column;
 }
+
+.contentRail {
+    width: min(100%, 1150px);
+    margin: 0 auto;
+}
+
 #statbox {
     display: flex;
     justify-content: space-around;
@@ -101,42 +107,57 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: cadetblue;
+    background-color: #faf9f5;
+    color: #1f2e31;
 }
 
 .blue {
-    background-color: rgb(37, 118, 134);
-    width: 87%;
+    background-color: #faf9f5;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#siteHeader {
+    width: 100%;
+}
+
 #topHeader {
-    width: 90%;
-    margin-top: 18px;
-    padding: 10px 12px;
+    width: 100%;
+    padding: 14px 22px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    box-sizing: border-box;
+    background-color: rgb(20, 86, 99);
+    border-top: 6px solid rgb(20, 86, 99);
 }
 
 #headerTitle {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
+    letter-spacing: 0.3px;
 }
 
 #headerNav {
+    flex: 1;
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 22px;
+    margin: 0 20px;
     font-weight: 600;
 }
 
 #headerNav a {
     color: white;
     text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 
 #headerNav a:hover {
@@ -147,8 +168,159 @@ button {
     text-decoration: underline;
 }
 
-.navSeparator {
-    opacity: 0.8;
+.navChevron {
+    font-size: 0.7rem;
+    opacity: 0.9;
+}
+
+#headerActions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.headerActionText {
+    margin: 0;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.headerActionText:hover {
+    text-decoration: underline;
+}
+
+.headerIconButton {
+    margin: 0;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+}
+
+.headerUserIcon {
+    width: 34px;
+    height: 34px;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+}
+
+.headerUserIcon::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.headerUserIcon::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    width: 16px;
+    height: 8px;
+    border: 2px solid white;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+}
+
+.headerSearchIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.headerSearchIcon::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.headerSearchIcon::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    right: 3px;
+    width: 10px;
+    height: 2px;
+    background: white;
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+#headerSubnav {
+    width: 100%;
+    padding: 12px 22px;
+    background: #f2efe8;
+    color: rgb(20, 86, 99);
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.subnavCurrent {
+    font-weight: 700;
+}
+
+.subnavDivider {
+    opacity: 0.7;
+}
+
+@media (max-width: 980px) {
+    #topHeader {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    #headerNav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    #headerActions {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    #headerTitle {
+        font-size: 1.6rem;
+    }
+
+    #headerNav a {
+        font-size: 1rem;
+    }
+
+    .headerActionText {
+        font-size: 1rem;
+    }
+
+    #headerSubnav {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
 }
 
 
@@ -156,14 +328,14 @@ button {
 #container {
     width: 90%;
     height: 90%;
-    background-color: white;
-    border: darkslategray 2px solid;
+    background-color: #fffefb;
+    border: rgb(20, 86, 99) 2px solid;
     margin: 25px;
     margin-bottom: 50px;
     padding: 15px;
     padding-bottom: 25px;
     border-radius: 10px;
-    box-shadow: 5px 5px darkslategrey;
+    box-shadow: 5px 5px rgba(37, 118, 134, 0.35);
 }
 
 .totalApps, .weeklyApps {
@@ -177,11 +349,12 @@ button {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 10px;
+    margin: 10px 0;
     height: 180px;
     border: 1px solid black;
     box-shadow: 5px 5px darkgrey;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .entryForm {
@@ -195,11 +368,13 @@ button {
 }
 
 #applicationsList {
-    margin: 10px;
+    width: 100%;
+    margin: 10px 0;
     padding: 10px;
     border: 1px solid black;
     box-shadow: 5px 5px darkgrey;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 #footer {

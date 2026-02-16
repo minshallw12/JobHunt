@@ -35,22 +35,23 @@ export default function HomePage() {
                     </div> 
                     :
 
-                    <div className="stats">
-                        <Stats applications={applications}/>
-                        <div className="center">
-                            <button onClick={toggleEntryForm}>Add Entry</button>
-                            {
-                                interviewFlag?
-                                <button onClick={toggleInterviewFlag}>Applications</button>
-                                :
-                                <button onClick={toggleInterviewFlag}>Interviews</button>
-                            }
+                    <div className="contentRail">
+                        <div className="stats">
+                            <Stats applications={applications}/>
+                            <div className="center">
+                                <button onClick={toggleEntryForm}>Add Entry</button>
+                                {
+                                    interviewFlag?
+                                    <button onClick={toggleInterviewFlag}>Applications</button>
+                                    :
+                                    <button onClick={toggleInterviewFlag}>Interviews</button>
+                                }
+                            </div>
                         </div>
-                        
                     </div>
                 }
             
-            <div className="center padding">
+            <div className="contentRail">
                 {
                     interviewFlag?
                     
